@@ -19,5 +19,21 @@
   "bugs": {
     "url": "https://github.com/Peccansy/cake-proj/issues"
   },
-  "homepage": "https://github.com/Peccansy/cake-proj#readme"
+  "homepage": "https://github.com/Peccansy/cake-proj#readme",
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
+    "gulp-wiredep": "0.0.0"
+  }
 }

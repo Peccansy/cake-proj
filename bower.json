@@ -1,0 +1,26 @@
+{
+  "name": "cakeproj",
+  "description": "mobile verison of cake site",
+  "main": "index.js",
+  "authors": [
+    "Albet Nikulshin"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "mobile",
+    "site"
+  ],
+  "homepage": "https://github.com/Peccansy/cake-proj",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "^5.0.0",
+    "jQuery": "^3.1.1"
+  }
+}
