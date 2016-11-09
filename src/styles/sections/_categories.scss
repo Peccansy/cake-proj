@@ -1,0 +1,38 @@
+.categories__inner {
+	overflow: hidden;
+}
+.categories__list {
+	font-size: 0;
+	margin: -1px;
+}
+.categories__item {
+	@include inline-block(top);
+	height: 80px;
+	width: (100/4)+%;
+	font-size: 1rem;
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;	
+}
+.categories__link {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: 15px;
+	height: 100%;
+}
+.categories__pic {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.categories__name {
+	@extend .categories__pic;
+	margin-bottom: 0;	
+}
+.categories__icon {
+	@include inline-block(middle);	
+}
+.categories__icon-text {
+	display: inline-block;
+	color: $black;	
+	line-height: (13.2/11)+rem;
+}

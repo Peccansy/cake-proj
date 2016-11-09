@@ -1,4 +1,31 @@
+//VARIABLES
+
+//----------- BG ------------//
+$bgHeader:#F2D1D0;
+$bgBtnSearch: #D7E8F2;
+$bgBtnOpen:#F6E3C8;
+$bgMenu:#FAEFE2;
+
+//--------- BTNS ------------//
+$btnBg:#E06B6E;
+$btnColor: #50150B;
+
+//--------- Text -----------//
+$black: #221F1F;
+$gray: #858585;
+
 //LAYOUT IMPORT
 
+@import 'layout/mixins';
 @import 'layout/adjusments';
 @import 'layout/fonts';
+@import 'layout/icons';
+
+//SECTION IMPORT
+
+@import 'sections/header';
+@import 'sections/categories';
+@import 'sections/promo';
+@import 'sections/main-sections';
+@import 'sections/side-menu';
+@import 'sections/side-search'

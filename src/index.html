@@ -1,24 +1,620 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+<head>    
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 	<title>CakeProj</title>	
-    <!-- build:css styles/vendor.css -->
-    	<!-- bower:css -->
-    	<!-- endbower -->
-    <!-- endbuild -->
-    <link rel="stylesheet" href="styles/build.css">
+	<!-- build:css styles/vendor.css -->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+	<link rel="stylesheet" href="../bower_components/animate.css/animate.css" />
+	<!-- endbower -->
+	<!-- endbuild -->
+	<link rel="stylesheet" href="styles/build.css">
 </head>
-<body>
-	Hello world!
-	<!-- build:js scripts/common.min.js -->
-    
-    <!-- endbuild -->
-
-    <!-- build:js js/vendor.js -->
-    	<!-- bower:js -->
-    	<!-- endbower -->
-    <!-- endbuild -->
+<body>   
+	<div class="wrapper">
+		<div class="wrapper__inner">
+			<!-- NAV -->
+			<aside class="aside menu">
+				<div class="menu__inner">
+					<div class="menu__info">
+						<div class="menu__info-text">
+							<a href="#" class="menu__info-link">Скачайте приложение</a>, <br> чтобы получить бонусы
+						</div>
+					</div>
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_active">
+								<a href="" class="nav__link"><i class="nav__link-icon ic-home ic-home-dims"></i><span class="nav__link-text">Главная</span></a>
+							</li>
+							<li class="nav__item">
+								<a href="" class="nav__link"><i class="nav__link-icon ic-bakery ic-bakery-dims"></i><span class="nav__link-text">Пекарни</span></a>
+							</li>
+							<li class="nav__item">
+								<a href="" class="nav__link"><i class="nav__link-icon ic-bag ic-bag-dims"></i><span class="nav__link-text">Товары</span></a>
+							</li>
+							<li class="nav__item">
+								<a href="" class="nav__link"><i class="nav__link-icon ic-sale ic-sale-dims"></i><span class="nav__link-text">Акции</span></a>
+							</li>
+							<li class="nav__item">
+								<a href="" class="nav__link"><i class="nav__link-icon ic-fav ic-fav-dims"></i><span class="nav__link-text">Избранное</span></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</aside>
+			<!-- NAV END -->
+			<!-- CONTENT -->
+			<div class="content">
+				<!-- HEADER -->
+				<header class="header">
+					<div class="container">
+						<div class="header__left">
+							<div class="header__icon">
+								<a href="#" class="header__btn ic-menu ic-menu-dims" data-target="open-menu"></a>
+							</div>                    
+							<div class="header__icon">
+								<a href="#" class="header__btn ic-cart ic-cart-dims"></a>
+							</div>
+						</div>
+						<div class="header__center">
+							<h1>get cake</h1>
+						</div>
+						<div class="header__right">                    
+							<div class="header__icon">
+								<a href="#" class="header__btn ic-profile ic-profile-dims"></a>
+							</div>                    
+							<div class="header__icon">
+								<a href="#" class="header__btn ic-search ic-search-dims" data-target="open-search"></a>
+							</div>
+						</div>
+					</div>
+				</header>
+				<!-- END HEADER -->
+				<!-- CATEGORIES -->
+				<div class="categories">
+					<div class="categories__inner">
+						<ul class="categories__list">
+							<li class="categories__item">
+								<a href="#" class="categories__link">
+									<div class="categories__pic">
+										<i class="categories__icon ic-cake ic-cake-dims"></i>
+									</div>
+									<div class="categories__name">
+										<span class="categories__icon-text">Торты</span>
+									</div>
+								</a>
+							</li>
+							<li class="categories__item">
+								<a href="#" class="categories__link">
+									<div class="categories__pic">
+										<i class="categories__icon ic-cheesecake ic-cheesecake-dims"></i>
+									</div>
+									<div class="categories__name">
+										<span class="categories__icon-text">Чизкейки</span>
+									</div>
+								</a>
+							</li>
+							<li class="categories__item">
+								<a href="#" class="categories__link">
+									<div class="categories__pic">
+										<i class="categories__icon ic-pie ic-pie-dims"></i>
+									</div>
+									<div class="categories__name">
+										<span class="categories__icon-text">Пироги</span>
+									</div>
+								</a>
+							</li>
+							<li class="categories__item">
+								<a href="#" class="categories__link">
+									<div class="categories__pic">
+										<i class="categories__icon ic-cupcake ic-cupcake-dims"></i>
+									</div>
+									<div class="categories__name">
+										<span class="categories__icon-text">Капкейки</span>
+									</div>
+								</a>
+							</li>
+							<li class="categories__item">
+								<a href="#" class="categories__link">
+									<div class="categories__pic">
+										<i class="categories__icon ic-cookie ic-cookie-dims"></i>
+									</div>
+									<div class="categories__name">
+										<span class="categories__icon-text">Печенье</span>
+									</div>
+								</a>
+							</li>
+							<li class="categories__item">
+								<a href="#" class="categories__link">
+									<div class="categories__pic">
+										<i class="categories__icon ic-macaroon ic-macaroon-dims"></i>
+									</div>
+									<div class="categories__name">
+										<span class="categories__icon-text">Макаруны</span>
+									</div>
+								</a>
+							</li>
+							<li class="categories__item">
+								<a href="#" class="categories__link">
+									<div class="categories__pic">
+										<i class="categories__icon ic-eclair ic-eclair-dims"></i>
+									</div>
+									<div class="categories__name">
+										<span class="categories__icon-text">Эклеры</span>
+									</div>
+								</a>
+							</li>
+							<li class="categories__item">
+								<a href="#" class="categories__link">
+									<div class="categories__pic">
+										<i class="categories__icon ic-more ic-more-dims"></i>
+									</div>
+									<div class="categories__name">
+										<span class="categories__icon-text">Разное</span>
+									</div>
+								</a>
+							</li>             
+						</ul>
+					</div>              
+				</div>
+				<!-- END CATEGORIES -->
+				<!-- PROMO -->
+				<div class="promo">
+					<div class="promo__inner" style="background-image: url('assets/img/content/promo1.jpg');">
+						<div class="promo__label">
+							hot
+						</div>
+						<div class="promo__text-block">
+							<div class="promo__title">
+								Отличный завтрак
+							</div>
+							<a href="#" class="promo__link">
+								Все акции
+							</a>						
+						</div>					
+					</div>
+				</div>
+				<!-- END PROMO -->
+				<!-- SECTION -->
+				<section class="section">
+					<div class="section__title">
+						<div class="container">
+							<a href="#" class="section__link">
+								<h3>Пекарни</h3>
+								<div class="section__arrow">
+									<i class="section__icon">									
+									</i>
+								</div>
+							</a>		
+						</div>		
+					</div>
+					<div class="section__goods">                    
+						<ul class="section__list section__list_carusel">		
+							<li class="section__item section__item_carusel">
+								<a href="#" class="section__item-link">
+									<div class="section__item-img" style="background-image:url(assets/img/content/carusel_item1.jpg);">							
+									</div>
+									<div class="section__item-desc">
+										<div class="section__item-stats">
+											<button type="button" class="section__stats-btn section__stats-btn_liked">
+												<i class="section__stats-icon">
+													
+												</i>										
+												<span class="section__stats-count">5</span>
+											</button>
+											<button type="button" class="section__stats-btn section__stats-btn_comments">
+												<i class="section__stats-icon">
+													
+												</i>
+												<span class="section__stats-count">5</span>
+											</button>
+										</div>
+										<div class="section__item-title">
+											Домашние сладости
+										</div>							
+									</div>
+								</a>
+							</li>					
+							<li class="section__item section__item_carusel">
+								<a href="#" class="section__item-link">
+									<div class="section__item-img" style="background-image:url(assets/img/content/carusel_item2.jpg);">							
+									</div>
+									<div class="section__item-desc">
+										<div class="section__item-stats">
+											<button type="button" class="section__stats-btn section__stats-btn_like">
+												<i class="section__stats-icon">
+													
+												</i>										
+												<span class="section__stats-count">5</span>
+											</button>
+											<button type="button" class="section__stats-btn section__stats-btn_comments">
+												<i class="section__stats-icon">
+													
+												</i>
+												<span class="section__stats-count">5</span>
+											</button>
+										</div>								
+										<div class="section__item-title">
+											Самая лучшая пекарня
+										</div>							
+									</div>
+								</a>
+							</li>					
+							<li class="section__item section__item_carusel">
+								<a href="№" class="section__item-link">
+									<div class="section__item-img" style="background-image:url(assets/img/content/carusel_item3.jpg);">							
+									</div>
+									<div class="section__item-desc">
+										<div class="section__item-stats">
+											<button type="button" class="section__stats-btn section__stats-btn_liked">
+												<i class="section__stats-icon">
+													
+												</i>										
+												<span class="section__stats-count">5</span>
+											</button>
+											<button type="button" class="section__stats-btn section__stats-btn_comments">
+												<i class="section__stats-icon">
+													
+												</i>
+												<span class="section__stats-count">5</span>
+											</button>
+										</div>								
+										<div class="section__item-title">
+											Как у бабушки
+										</div>							
+									</div>
+								</a>
+							</li>					
+						</ul>
+					</div>			
+				</section>
+				<!-- END SECTION -->
+				<!-- SECTION -->
+				<section class="section">
+					<div class="section__title">
+						<div class="container">
+							<a href="#" class="section__link">
+								<h3>Рекомендуем</h3>
+								<div class="section__arrow">
+									<i class="section__icon">									
+									</i>
+								</div>
+							</a>		
+						</div>		
+					</div>
+					<div class="section__goods">                    
+						<div class="container">
+							<ul class="section__list">		
+								<li class="section__item">
+									<a href="#" class="section__item-link">
+										<div class="section__item-img" style="background-image:url(assets/img/content/item1.jpg);">							
+										</div>
+										<div class="section__item-desc">
+											<div class="section__item-category">
+												Пироги
+											</div>
+											<div class="section__item-title">
+												Киш с луком
+											</div>
+											<div class="section__item-price">
+												240 руб.
+											</div>
+											<div class="section__item-stats">
+												<button type="button" class="section__stats-btn section__stats-btn_liked">
+													<i class="section__stats-icon">
+														
+													</i>										
+													<span class="section__stats-count">5</span>
+												</button>
+												<button type="button" class="section__stats-btn section__stats-btn_comments">
+													<i class="section__stats-icon">
+														
+													</i>
+													<span class="section__stats-count">5</span>
+												</button>
+											</div>
+										</div>
+									</a>
+								</li>		
+								<li class="section__item">
+									<a href="#" class="section__item-link">
+										<div class="section__item-img" style="background-image:url(assets/img/content/item2.jpg);">							
+										</div>
+										<div class="section__item-desc">
+											<div class="section__item-category">
+												Капкейки
+											</div>
+											<div class="section__item-title">
+												Шоколадный маффин
+											</div>
+											<div class="section__item-price">
+												120 руб.
+											</div>
+											<div class="section__item-stats">
+												<button type="button" class="section__stats-btn section__stats-btn_liked">
+													<i class="section__stats-icon">
+														
+													</i>										
+													<span class="section__stats-count">5</span>
+												</button>
+												<button type="button" class="section__stats-btn section__stats-btn_comments">
+													<i class="section__stats-icon">
+														
+													</i>
+													<span class="section__stats-count">5</span>
+												</button>
+											</div>
+										</div>
+									</a>
+								</li>		
+								<li class="section__item">
+									<a href="" class="section__item-link">
+										<div class="section__item-img" style="background-image:url(assets/img/content/item3.jpg);">							
+										</div>
+										<div class="section__item-desc">
+											<div class="section__item-category">
+												Чизкейки
+											</div>
+											<div class="section__item-title">
+												Кекс с черникой
+											</div>
+											<div class="section__item-price">
+												130 руб.
+											</div>
+											<div class="section__item-stats">
+												<button type="button" class="section__stats-btn section__stats-btn_like">
+													<i class="section__stats-icon">
+														
+													</i>										
+													<span class="section__stats-count">5</span>
+												</button>
+												<button type="button" class="section__stats-btn section__stats-btn_comments">
+													<i class="section__stats-icon">
+														
+													</i>
+													<span class="section__stats-count">5</span>
+												</button>
+											</div>
+										</div>
+									</a>
+								</li>		
+								<li class="section__item">
+									<a href="#" class="section__item-link">
+										<div class="section__item-img" style="background-image:url(assets/img/content/item4.jpg);">							
+										</div>
+										<div class="section__item-desc">
+											<div class="section__item-category">
+												Пироги
+											</div>
+											<div class="section__item-title">
+												Пирожок со шпинатом и сыром
+											</div>
+											<div class="section__item-price">
+												80 руб.
+											</div>
+											<div class="section__item-stats">
+												<button type="button" class="section__stats-btn section__stats-btn_like">
+													<i class="section__stats-icon">
+														
+													</i>										
+													<span class="section__stats-count">5</span>
+												</button>
+												<button type="button" class="section__stats-btn section__stats-btn_comments">
+													<i class="section__stats-icon">
+														
+													</i>
+													<span class="section__stats-count">5</span>
+												</button>
+											</div>
+										</div>
+									</a>
+								</li>					
+							</ul>
+						</div>
+					</div>			
+				</section>
+				<!-- END SECTION -->
+				<!-- PROMO -->
+				<div class="promo">								
+					<div class="promo__inner" style="background-image: url('assets/img/content/promo2.jpg');">
+						<div class="promo__label">
+							промо
+						</div>
+						<div class="promo__text-block">
+							<div class="promo__title">
+								Лимонные кексы
+							</div>						
+						</div>					
+					</div>
+				</div>
+				<!-- END PROMO -->
+				<!-- SECTION -->
+				<section class="section">
+					<div class="section__title">
+						<div class="container">
+							<a href="#" class="section__link">
+								<h3>Недавно заказаные</h3>
+								<div class="section__arrow">
+									<i class="section__icon">									
+									</i>
+								</div>
+							</a>		
+						</div>		
+					</div>
+					<div class="section__goods">                    
+						<div class="container">
+							<ul class="section__list">		
+								<li class="section__item">
+									<a href="#" class="section__item-link">
+										<div class="section__item-img" style="background-image:url(assets/img/content/item5.jpg);">							
+										</div>
+										<div class="section__item-desc">
+											<div class="section__item-category">
+												Макаруны
+											</div>
+											<div class="section__item-title">
+												Макарун
+											</div>
+											<div class="section__item-price">
+												240 руб.
+											</div>
+											<div class="section__item-stats">
+												<button type="button" class="section__stats-btn section__stats-btn_liked">
+													<i class="section__stats-icon">
+														
+													</i>										
+													<span class="section__stats-count">5</span>
+												</button>
+												<button type="button" class="section__stats-btn section__stats-btn_comments">
+													<i class="section__stats-icon">
+														
+													</i>
+													<span class="section__stats-count">5</span>
+												</button>
+											</div>
+										</div>
+									</a>
+								</li>		
+								<li class="section__item">
+									<a href="#" class="section__item-link">
+										<div class="section__item-img" style="background-image:url(assets/img/content/item6.jpg);">							
+										</div>
+										<div class="section__item-desc">
+											<div class="section__item-category">
+												Капкейки
+											</div>
+											<div class="section__item-title">
+												Кокосовый капкейк
+											</div>
+											<div class="section__item-price">
+												120 руб.
+											</div>
+											<div class="section__item-stats">
+												<button type="button" class="section__stats-btn section__stats-btn_liked">
+													<i class="section__stats-icon">
+														
+													</i>										
+													<span class="section__stats-count">5</span>
+												</button>
+												<button type="button" class="section__stats-btn section__stats-btn_comments">
+													<i class="section__stats-icon">
+														
+													</i>
+													<span class="section__stats-count">5</span>
+												</button>
+											</div>
+										</div>
+									</a>
+								</li>		
+								<li class="section__item">
+									<a href="" class="section__item-link">
+										<div class="section__item-img" style="background-image:url(assets/img/content/item7.jpg);">							
+										</div>
+										<div class="section__item-desc">
+											<div class="section__item-category">
+												Печенье
+											</div>
+											<div class="section__item-title">
+												Печенье
+											</div>
+											<div class="section__item-price">
+												130 руб.
+											</div>
+											<div class="section__item-stats">
+												<button type="button" class="section__stats-btn section__stats-btn_like">
+													<i class="section__stats-icon">
+														
+													</i>										
+													<span class="section__stats-count">5</span>
+												</button>
+												<button type="button" class="section__stats-btn section__stats-btn_comments">
+													<i class="section__stats-icon">
+														
+													</i>
+													<span class="section__stats-count">5</span>
+												</button>
+											</div>
+										</div>
+									</a>
+								</li>		
+								<li class="section__item">
+									<a href="#" class="section__item-link">
+										<div class="section__item-img" style="background-image:url(assets/img/content/item8.jpg);">							
+										</div>
+										<div class="section__item-desc">
+											<div class="section__item-category">
+												Торты
+											</div>
+											<div class="section__item-title">
+												Медовый торт с бананом
+											</div>
+											<div class="section__item-price">
+												80 руб.
+											</div>
+											<div class="section__item-stats">
+												<button type="button" class="section__stats-btn section__stats-btn_like">
+													<i class="section__stats-icon">
+			
+													</i>										
+													<span class="section__stats-count">5</span>
+												</button>
+												<button type="button" class="section__stats-btn section__stats-btn_comments">
+													<i class="section__stats-icon">
+			
+													</i>
+													<span class="section__stats-count">5</span>
+												</button>
+											</div>
+										</div>
+									</a>
+								</li>					
+							</ul>
+						</div>
+					</div>			
+				</section>
+				<!-- END SECTION -->
+			</div>
+			<!-- END CONTENT -->
+			<!-- SEARCH -->
+			<aside class="aside search">				        
+				<div class="search__header">
+					<div class="container">
+						<form action="#" class="search__form">
+							<input type="search" name="inputsearch" class="search__input-search" placeholder="Поиск...">
+							<input type="submit" hidden="hidden">
+							<a href="#" class="search__cancel-btn" data-target="open-search">Отмена</a>
+						</form>
+					</div>
+				</div>
+				<div class="search__result">
+					<ul class="search__list">
+						<li class="search__item search__item_category">Пекарни</li>
+						<li class="search__item">Осетинские пироги</li>
+						<li class="search__item">Пироги как дома</li>
+					</ul>
+					<ul class="search__list">
+						<li class="search__item search__item_category">Товары</li>
+						<li class="search__item">Пирог с черникой</li>
+						<li class="search__item">Пирог со шпинатом и сыром</li>
+						<li class="search__item">Куриный пирог</li>
+						<li class="search__item">Пирог с сердцем</li>
+					</ul>
+				</div>				
+		</aside>
+	</div>
+		<!-- END SEARCH -->
+	</div>
+	<!-- SCRIPTS --> 	
+	<!-- build:js js/vendor.js -->
+	<!-- bower:js -->
+	<script src="../bower_components/jquery/dist/jquery.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:js js/common.min.js -->
+	<script src="js/common.js"></script>
+	<!-- endbuild -->
 </body>
 </html>

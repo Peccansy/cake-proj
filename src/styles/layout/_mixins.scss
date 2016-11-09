@@ -1,0 +1,17 @@
+@mixin font($ff,$fz,$fw, $lh) {
+	font-family: $ff;
+	font-size: $fz;
+	font-weight: $fw;
+	line-height: $lh;
+}
+@mixin inline-block($align) {
+	display: inline-block;
+	vertical-align: $align;
+}
+%clearfix {
+	&::after,&::before {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}

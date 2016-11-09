@@ -1,0 +1,34 @@
+.header {
+	height: 60px;
+	background-color: $bgHeader;
+	line-height: 60px;
+	font-size: 0;
+	transition:background-color .4s ease-in;
+}
+.header__left{
+	float: left;
+	width: 30%;
+	margin-left: -19px;
+}
+.header__right {
+	@extend .header__left;
+	float: right;
+	text-align: right;	
+}
+.header__center {
+	width: 48.5%;
+	display: inline-block;
+	@include font('bebas_neuebold', 17px, normal, 60px);
+	text-align: center;
+	color: $btnColor;
+	h1 {
+		font-size: (17/11)+rem;
+	}
+}
+.header__btn {
+	@include inline-block(middle);
+}
+.header__icon {
+	@include inline-block(middle);
+	margin-left: 19px;
+}

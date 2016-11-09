@@ -1,0 +1,48 @@
+.wrapper_menu-open {
+	.menu {
+			box-shadow: 1px -3px 15px 0px rgba(0, 0, 0, 0.2);
+	}
+}
+.menu {
+	width: 82%;
+	background-color: $bgMenu;
+	transition: .4s ease-in;
+}
+.menu__info {
+	display: table;
+	width: 100%;
+	border-bottom: 1px solid $bgBtnOpen;
+	height: 80px;
+	padding-left: 14px;
+}
+.menu__info-text {
+	display: table-cell;
+	color: $gray;
+	vertical-align: middle;	
+}
+.menu__info-link {
+	color: inherit;
+}
+.nav__item {
+	border-bottom: 1px solid $bgBtnOpen;
+	border-left: 3px solid transparent;
+	height: 60px;
+	&_active {
+		border-left-color: $btnBg;
+	}
+}
+.nav__link {
+	text-decoration: none;
+	display: block;
+	line-height: 60px;
+	padding-left: 15px;
+}
+.nav__link-icon {
+	@include inline-block(middle);
+}
+.nav__link-text {
+	@extend .nav__link-icon;
+	font-size: (17/11)+rem;
+	color: $black;
+	margin-left: 10px;
+}

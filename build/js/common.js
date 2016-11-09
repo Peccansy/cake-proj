@@ -1,0 +1,1 @@
+$(document).ready(function(){var e=function(e){var a=$(".wrapper");a.is("."+e)?a.removeClass(e):a.addClass(e)};$('*[data-target="open-menu"]').on("click",function(a){a.preventDefault,e("wrapper_menu-open")}),$('*[data-target="open-search"]').on("click",function(a){a.preventDefault,e("wrapper_search-open"),$("#myform")[0].reset()})});

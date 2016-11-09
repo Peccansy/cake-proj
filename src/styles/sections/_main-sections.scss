@@ -1,0 +1,148 @@
+.section__title {
+	@include font('bebas_neuebold', (20/11)+rem, normal, 20px);
+	margin-bottom: 20px;
+}
+.section__link {
+	display: block;
+	height: 100%;
+	position: relative;
+	text-decoration: none;
+    color: #221f1f;
+}
+.section__arrow {
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	right: 0;
+	width: 10px;
+}
+.section__icon {
+	display: block;
+	width: 10px;
+	height: 20px;
+	background:transparent url('../assets/img/icons/section_arrow.svg') center no-repeat;
+}
+.section__goods {
+	overflow: hidden;
+}
+.section__list {
+	font-size: 0;
+	margin-left: -10px;	
+	&_carusel {
+		margin-left: 0;
+		white-space: nowrap;
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch;
+		-ms-overflow-style: none;
+		&::-webkit-scrollbar { 
+			width: 0; 
+		}
+	}
+
+}
+.section__item {
+	@include  inline-block(top);
+	font-size: 1rem;
+	width: calc(100%/2 - 10px);
+	margin-left: 10px;
+	margin-bottom: 10px;
+	height: 258px;
+	min-width: 136px;
+	border: 1px solid #E5E5E5;
+	background-color: #F8F8F8;
+	&_carusel {		
+		border: none;
+		background-color: transparent;
+		min-width: auto;
+		width: 106px;
+		white-space: normal;
+		height: auto;
+		&:first-child {
+			margin-left: 19px;
+		}
+		&:last-child {
+			margin-right: 19px;
+		}
+		.section__item-img {
+			height: 106px;
+		}
+		.section__item-desc {
+			padding: 0;
+			height: auto;
+		}
+		.section__item-stats {
+			position: static;
+			margin-bottom: 5px;
+		}
+	}
+}
+.section__item-link {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+}
+.section__item-img {
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	width: 100%;
+	height: 134px;	
+}
+.section__item-desc {
+	padding: 10px;
+	position: relative;
+	height: 124px;
+	overflow: hidden;
+}
+.section__item-category {
+	color: $gray;	
+}
+.section__item-title {
+	@include font('source_sans_prosemibold', (14/11)+rem, normal, 20px);
+	max-height: 40px;
+	overflow: hidden;
+	word-wrap: break-word;
+}
+.section__item-price {
+	@include font('source_sans_prosemibold', (14/11)+rem, normal, 20px);
+	color: $gray;
+}
+.section__item-stats {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	margin-left: -10px;
+}
+.section__stats-btn {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	padding: 0;
+	&_like {
+		.section__stats-icon {
+			background:transparent url('../assets/img/icons/no_liked.svg') 50% no-repeat;			
+		}
+	}
+	&_liked {
+		.section__stats-icon {
+			background:transparent url('../assets/img/icons/like.svg') 50% no-repeat;			
+		}
+	}
+	&_comments {
+		.section__stats-icon {
+			background:transparent url('../assets/img/icons/comments.svg') 50% no-repeat;		
+		}
+	}
+}
+.section__stats-icon {
+	@include inline-block(middle);
+	width: 12px;
+	height: 12px;
+	margin-left: 10px;	
+}
+.section__stats-count {
+	@include inline-block(middle);
+	color: $gray;
+
+}
+

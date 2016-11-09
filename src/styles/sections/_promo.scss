@@ -1,0 +1,47 @@
+.promo__inner {
+	min-height: 106px;
+	background-repeat: none;
+	background-size: cover;
+	background-position: 50% 50%;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 40px;
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;		
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba(0,0,0,.2);
+		z-index: 2;
+	}
+}
+.promo__text-block {
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+	z-index: 3;
+}
+.promo__label {
+	@include font('bebas_neuebold', (11/11)+rem, normal, 20px);	
+	text-transform: uppercase;
+	color: #fff;
+	position: absolute;
+	left: 2%;
+    top: 9%;
+	background-color: $btnBg;	
+	padding: 0 17px;
+	z-index: 3;
+}
+.promo__title {
+	@include font('bebas_neuebold', (17/11)+rem, normal, 20px);
+	text-transform: uppercase;
+}
+.promo__link {
+	color: #fff;
+}
