@@ -1,16 +1,23 @@
 $(document).ready(function(){
 
 	var offCanvas = function (wrap, open) {
-			
+
 		if (wrap.length === 0) return false;
 
 		if (wrap.is('.'+ open)) {
 			wrap.removeClass(open);			
 		} else {
-			wrap.addClass(open);		
+			wrap.addClass(open);
+			var container = $('.menu');
+			$('body').on('click', '.wrapper', function(e){
+				console.log(e.target);				
+				if (!container.is(e.target)) {
+					wrap.removeClass(open);
+					$('body').off('click', '.wrapper');
+				}				
+			});		
 		}
 	}
-
 	$('body').on('click', '*[data-target="open-menu"]', function(e){
 
 		e.preventDefault();
