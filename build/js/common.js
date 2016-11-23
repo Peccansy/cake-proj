@@ -1,20 +1,13 @@
 $(document).ready(function(){
 
 	var offCanvas = function (wrap, open) {
-
-		var container = $('.menu');	
+			
 		if (wrap.length === 0) return false;
 
 		if (wrap.is('.'+ open)) {
 			wrap.removeClass(open);			
 		} else {
-			wrap.addClass(open);			
-			$('body').on('click', function(e){		
-				console.log(e.target);					
-				if (!container.is(e.target)&&container.has(e.target).length === 0) {					
-					wrap.removeClass(open);								 				
-				}								
-			});			
+			wrap.addClass(open);		
 		}
 	}
 
