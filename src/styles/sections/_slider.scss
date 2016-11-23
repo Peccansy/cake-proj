@@ -1,3 +1,12 @@
+.slider {
+	&_cake {
+		position: relative;
+		margin-bottom: 10px;
+	}
+}
+.slider__item.cake__img {
+	margin-bottom: 0;
+}
 .slider__wrap {
 	position: relative;	
 }
