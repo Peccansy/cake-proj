@@ -1,12 +1,13 @@
 .wrapper_menu-open {
 	.menu {
-			box-shadow: 1px -3px 15px 0px rgba(0, 0, 0, 0.2);
+		box-shadow: 1px -3px 15px 0px rgba(0, 0, 0, 0.2);			
 	}
 }
 .menu {
 	width: 82%;
+	height: 100vh;	
 	background-color: $bgMenu;
-	transition: .4s ease-in;
+	transition: .4s ease-in;	
 }
 .menu__info {
 	display: table;
@@ -27,7 +28,11 @@
 	border-bottom: 1px solid $bgBtnOpen;
 	border-left: 3px solid transparent;
 	height: 60px;
+	transition: .3s;
 	&_active {
+		border-left-color: $btnBg;
+	}
+	&:hover, &:active {
 		border-left-color: $btnBg;
 	}
 }

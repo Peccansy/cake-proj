@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Оформление заказа</title>	
+	<link rel="stylesheet" href="styles/vendor.css">
+	<link rel="stylesheet" href="styles/build.css">
+</head>
+<body>
+	<div class="wrapper wrapper_bg">
+		<div class="wrapper__inner">			
+			<!-- CONTENT -->
+			<div class="content">
+				<!-- HEADER -->
+				<header class="header header_single">
+					<div class="container">
+						<div class="header__left">
+							<div class="header__icon">
+								<a href="cart-1.html" class="header__btn header__btn_back">
+									<div class="header__btn_arrow">
+										<i class="section__icon">									
+										</i>
+									</div>
+								</a>
+							</div>						
+						</div>
+						<div class="header__center">
+							<h1>Оформление</h1>
+						</div>						
+					</div>
+				</header>
+				<!-- END HEADER -->
+				<!-- SECTION -->
+				<section class="section cart-form">
+					<div class="cart-form__inner">						
+						<form action="#" class="cart-form__form-tag">
+							<div class="cart-form__row">
+								<div class="cart-form__elem">
+									<label class="cart-form__label" for="name">Имя</label>
+								</div>
+								<div class="cart-form__elem">
+									<input type="text" class="cart-form__input" id="name" name="name">
+								</div>
+							</div>
+							<div class="cart-form__row">
+								<div class="cart-form__elem">
+									<label class="cart-form__label" for="tel">Телефон</label>
+								</div>
+								<div class="cart-form__elem">
+									<input type="tel" class="cart-form__input" id="tel" name="tel">
+								</div>
+							</div>
+							<div class="cart-form__row">
+								<div class="cart-form__elem">
+									<label class="cart-form__label" for="adress">Адрес</label>
+								</div>
+								<div class="cart-form__elem">
+									<textarea rows="1" name="adress" id="adress" class="cart-form__input cart-form__input_textarea"></textarea>
+								</div>
+							</div>							
+							<div class="cart-form__row">
+								<div class="cart-form__elem">
+									<label class="cart-form__label" for="under">Станция метро</label>
+								</div>
+								<div class="cart-form__elem">
+									<div class="cake__input-wrapper cake__input-wrapper_select">
+										<select class="cart-form__input cart-form__input_select" name="underground" id="under">
+											<option class="cart-form__input_option" value="1">
+												Автозаводская
+											</option>
+											<option class="cart-form__input_option" value="2">
+												Царицыно
+											</option>
+											<option class="cart-form__input_option" value="3">
+												Курская
+											</option>
+										</select>
+									</div>
+								</div>								
+							</div>
+							<div class="cart-form__row">
+								<div class="cart-form__elem">
+									<label class="cart-form__label" for="date">Дата доставки</label>
+								</div>
+								<div class="cart-form__elem">
+									<div class="cake__input-wrapper">
+										<input type="date" class="cart-form__input cart-form__input_date" id="date">
+									</div>
+								</div>
+							</div>
+							<div class="cart-form__row">
+								<div class="cart-form__elem">									
+									<label class="cart-form__label" for="time">Удобное время доставки</label>			
+								</div>
+								<div class="cart-form__elem">
+									<div class="cake__input-wrapper cake__input-wrapper_select">
+										<input id="time" type="time" class="cart-form__input cart-form__input_select">
+									</div>
+								</div>
+							</div>	
+						</form>
+					</div>
+					<div class="cart__form-time">
+						Ваш заказ будет доставлен через 40 мин.
+					</div>					
+				</section>	
+				<!-- END SECTION -->				
+			</div>
+			<!-- END CONTENT -->				
+		</div>		
+	</div>
+	<div class="order">
+		<div class="order__inner">
+			<div class="container">
+				<a href="#" class="order__input order__input_submit">
+					оформить заказ
+				</a>
+			</div>
+		</div>
+	</div>	
+	<script src="js/vendor.js"></script>
+	<script src="js/common.min.js"></script>
+</body>
+</html>

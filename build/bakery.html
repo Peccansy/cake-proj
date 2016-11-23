@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<title>CakeProj</title>	
+	<link rel="stylesheet" href="styles/vendor.css">
+	<link rel="stylesheet" href="styles/build.css">
+</head>
+<body>
+	<div class="wrapper wrapper_no-footer">
+		<div class="wrapper__inner">
+			<!-- NAV -->
+			<aside class="aside menu">
+				<div class="menu__inner">
+					<div class="menu__info">
+						<div class="menu__info-text">
+							<a href="#" class="menu__info-link">Скачайте приложение</a>, <br> чтобы получить бонусы
+						</div>
+					</div>
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a href="index.html" class="nav__link"><i class="nav__link-icon ic-home ic-home-dims"></i><span class="nav__link-text">Главная</span></a>
+							</li>
+							<li class="nav__item nav__item_active">
+								<a href="bakery.html" class="nav__link"><i class="nav__link-icon ic-bakery ic-bakery-dims"></i><span class="nav__link-text">Пекарни</span></a>
+							</li>
+							<li class="nav__item">
+								<a href="goods.html" class="nav__link"><i class="nav__link-icon ic-bag ic-bag-dims"></i><span class="nav__link-text">Товары</span></a>
+							</li>
+							<li class="nav__item">
+								<a href="" class="nav__link"><i class="nav__link-icon ic-sale ic-sale-dims"></i><span class="nav__link-text">Акции</span></a>
+							</li>
+							<li class="nav__item">
+								<a href="" class="nav__link"><i class="nav__link-icon ic-fav ic-fav-dims"></i><span class="nav__link-text">Избранное</span></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</aside>
+			<!-- NAV END -->
+			<!-- CONTENT -->
+			<div class="content">
+				<!-- HEADER -->
+				<header class="header">
+					<div class="container">
+						<div class="header__left">
+							<div class="header__icon">
+								<a href="#" class="header__btn ic-menu ic-menu-dims" data-target="open-menu"></a>
+							</div>                    
+							<div class="header__icon">
+								<a href="cart-1.html" class="header__btn ic-cart ic-cart-dims"></a>
+							</div>
+						</div>
+						<div class="header__center">
+							<h1>DELICE</h1>
+						</div>
+						<div class="header__right">                    
+							<div class="header__icon">
+								<a href="profile.html" class="header__btn ic-profile ic-profile-dims"></a>
+							</div>                    
+							<div class="header__icon">
+								<a href="#" class="header__btn ic-search ic-search-dims" data-target="open-search"></a>
+							</div>
+						</div>
+					</div>
+				</header>
+				<!-- END HEADER -->
+				<!-- SECTION -->
+				<section class="bakery">
+					<!-- SLIDER -->
+					<div class="slider">						
+						<div class="slider__wrap owl-carousel">							
+							<div class="slider__item" style="background-image: url('assets/img/content/slider_pic.jpg');">
+								<img src="assets/img/content/slider_pic.jpg" alt="Пекарня" class="slider__img">
+								<div class="slider__item-buttons">									
+									<div class="slider__icon slider__icon_like">										
+										<svg class="slider__icon-tag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">									
+											<g id="Слой_2" data-name="Слой 2">
+												<g data-name="Layer 1">
+													<path class="inner" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.4,3.4,0,0,0,12,3.55Z"/>
+												</g>
+												<g data-name="Layer 2">
+													<path class="outer" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.42,3.42,0,0,0,12,3.55Zm-1,.29h0c-.28,2.56-3.74,6.07-5,7-1.24-.94-4.7-4.45-5-7,0,0,0-.18,0-.3A2.54,2.54,0,0,1,5.31,1.71L6,2.38l.69-.67A2.54,2.54,0,0,1,11,3.55,2.8,2.8,0,0,1,11,3.84Z"/>
+												</g>
+											</g>
+										</svg>										
+									</div>
+									<span class="slider__item-count">4</span>
+								</div>									
+							</div>								
+							<div class="slider__item" style="background-image: url('assets/img/content/slider_pic.jpg');">
+								<img src="assets/img/content/slider_pic.jpg" alt="Пекарня" class="slider__img">
+								<div class="slider__item-buttons">									
+									<div class="slider__icon slider__icon_like">										
+										<svg class="slider__icon-tag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">									
+											<g id="Слой_2" data-name="Слой 2">
+												<g data-name="Layer 1">
+													<path class="inner" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.4,3.4,0,0,0,12,3.55Z"/>
+												</g>
+												<g data-name="Layer 2">
+													<path class="outer" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.42,3.42,0,0,0,12,3.55Zm-1,.29h0c-.28,2.56-3.74,6.07-5,7-1.24-.94-4.7-4.45-5-7,0,0,0-.18,0-.3A2.54,2.54,0,0,1,5.31,1.71L6,2.38l.69-.67A2.54,2.54,0,0,1,11,3.55,2.8,2.8,0,0,1,11,3.84Z"/>
+												</g>
+											</g>
+										</svg>										
+									</div>
+									<span class="slider__item-count">4</span>
+								</div>									
+							</div>								
+							<div class="slider__item" style="background-image: url('assets/img/content/slider_pic.jpg');">
+								<img src="assets/img/content/slider_pic.jpg" alt="Пекарня" class="slider__img">
+								<div class="slider__item-buttons">									
+									<div class="slider__icon slider__icon_like">										
+										<svg class="slider__icon-tag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">									
+											<g id="Слой_2" data-name="Слой 2">
+												<g data-name="Layer 1">
+													<path class="inner" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.4,3.4,0,0,0,12,3.55Z"/>
+												</g>
+												<g data-name="Layer 2">
+													<path class="outer" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.42,3.42,0,0,0,12,3.55Zm-1,.29h0c-.28,2.56-3.74,6.07-5,7-1.24-.94-4.7-4.45-5-7,0,0,0-.18,0-.3A2.54,2.54,0,0,1,5.31,1.71L6,2.38l.69-.67A2.54,2.54,0,0,1,11,3.55,2.8,2.8,0,0,1,11,3.84Z"/>
+												</g>
+											</g>
+										</svg>										
+									</div>
+									<span class="slider__item-count">4</span>
+								</div>									
+							</div>																											
+						</div>
+					</div>
+					<!-- END SLIDER -->
+					<div class="bakery__bakeshop">
+						<div class="container">
+							<div class="bakery__left">
+								<div class="bakery__logo">
+									<img src="assets/img/content/logo.png" alt="logo" class="bakery__logo-pic">
+								</div>
+							</div>
+							<div class="bakery__right">
+								<div class="bakery__title">
+									delice
+								</div>
+								<div class="bakery__rating">
+									<ul class="bakery__rating-list">
+										<li class="bakery__rating-item"></li>
+										<li class="bakery__rating-item bakery__rating-item_active"></li>
+										<li class="bakery__rating-item"></li>
+										<li class="bakery__rating-item"></li>
+										<li class="bakery__rating-item"></li>
+									</ul>
+									<span class="bakery__rating-count">3</span>
+								</div>
+								<div class="bakery__tags">
+									<span class="bakery__tag">пироги</span>
+									<span class="bakery__tag">капкейки</span>
+									<span class="bakery__tag">чизкейки</span>
+									<span class="bakery__tag">макаруны</span>
+									<span class="bakery__tag">печенье</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs">
+						<div class="tabs__link">
+							<ul class="tabs__link-list">
+								<li class="tabs__link-item tabs__link-item_active">
+									О пекарне
+								</li>
+								<li class="tabs__link-item">
+									Меню
+								</li>
+								<li class="tabs__link-item">
+									Отзывы <span class="tabs__count">5</span>
+								</li>
+							</ul>
+						</div>
+						<div class="tabs__body">							
+							<div class="tabs__body-item tabs__body-item_active">
+								<div class="tabs__item-inner">
+									<div class="container">
+										<div class="info-block info-block_margin-bottom info-block_margin-top">
+											<div class="info-block__text info-block__text_stock">
+												<div class="info-block__title">акция!</div>
+												Купите 2 пирога и получите 3-й в подарок!
+											</div>
+											<div class="info-block__btn info-block__btn_stock">
+												<span class="info-block__label">1</span> день <span class="info-block__label">22</span> часа до окончания акции
+											</div>
+										</div>
+										<div class="section__title">
+											Недавно заказанные
+										</div>
+									</div>								
+									<div class="section__goods section__goods_margin-bottom">								                    
+										<div class="container">
+											<ul class="section__list">		
+												<li class="section__item">
+													<a href="single-item.html" class="section__item-link">
+														<div class="section__item-img" style="background-image:url(assets/img/content/item1.jpg);">							
+														</div>
+														<div class="section__item-desc">
+															<div class="section__item-category">
+																Пироги
+															</div>
+															<div class="section__item-title">
+																Киш с луком
+															</div>
+															<div class="section__item-price">
+																240 руб.
+															</div>
+															<div class="section__item-stats">
+																<div class="section__stats-btn section__stats-btn_liked">
+																	<span class="section__stats-icon">
+																		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+																			<g  data-name="Слой 2">
+																				<g  data-name="Layer 1">
+																					<path class="inner" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.4,3.4,0,0,0,12,3.55Z"/>
+																				</g>
+																				<g  data-name="Layer 2">
+																					<path class="outer" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.42,3.42,0,0,0,12,3.55Zm-1,.29h0c-.28,2.56-3.74,6.07-5,7-1.24-.94-4.7-4.45-5-7,0,0,0-.18,0-.3A2.54,2.54,0,0,1,5.31,1.71L6,2.38l.69-.67A2.54,2.54,0,0,1,11,3.55,2.8,2.8,0,0,1,11,3.84Z"/>
+																				</g>
+																			</g>
+																		</svg>
+																	</span>										
+																	<span class="section__stats-count">5</span>
+																</div>
+																<div class="section__stats-btn section__stats-btn_comments">
+																	<span class="section__stats-icon">
+																		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.6 12.53">
+																			<g data-name="Слой 2">
+																				<g data-name="Layer 1">
+																					<path class="svg__fill" d="M1.85,9.43A5.08,5.08,0,0,1,0,5.6C0,2.51,3.05,0,6.8,0s6.8,2.51,6.8,5.6-3.05,5.6-6.8,5.6A8.21,8.21,0,0,1,5,11L1.12,12.53ZM6.8,1C3.6,1,1,3.06,1,5.6A4.12,4.12,0,0,0,2.58,8.75a.8.8,0,0,1,.26.8l-.31,1.34L4.65,10a.79.79,0,0,1,.3-.06l.19,0a7.28,7.28,0,0,0,1.66.2c3.2,0,5.8-2.06,5.8-4.6S10,1,6.8,1Z"/>
+																				</g>
+																			</g>
+																		</svg>
+																	</span>
+																	<span class="section__stats-count">5</span>
+																</div>
+															</div>
+														</div>
+													</a>
+												</li>		
+												<li class="section__item">
+													<a href="single-item.html" class="section__item-link">
+														<div class="section__item-img" style="background-image:url(assets/img/content/item2.jpg);">							
+														</div>
+														<div class="section__item-desc">
+															<div class="section__item-category">
+																Капкейки
+															</div>
+															<div class="section__item-title">
+																Шоколадный маффин
+															</div>
+															<div class="section__item-price">
+																120 руб.
+															</div>
+															<div class="section__item-stats">
+																<div class="section__stats-btn section__stats-btn_liked">
+																	<span class="section__stats-icon">
+																		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">								
+																			<g  data-name="Слой 2">
+																				<g  data-name="Layer 1">
+																					<path class="inner" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.4,3.4,0,0,0,12,3.55Z"/>
+																				</g>
+																				<g  data-name="Layer 2">
+																					<path class="outer" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.42,3.42,0,0,0,12,3.55Zm-1,.29h0c-.28,2.56-3.74,6.07-5,7-1.24-.94-4.7-4.45-5-7,0,0,0-.18,0-.3A2.54,2.54,0,0,1,5.31,1.71L6,2.38l.69-.67A2.54,2.54,0,0,1,11,3.55,2.8,2.8,0,0,1,11,3.84Z"/>
+																				</g>
+																			</g>
+																		</svg>
+																	</span>											
+																	<span class="section__stats-count">5</span>
+																</div>
+																<div class="section__stats-btn section__stats-btn_comments">
+																	<span class="section__stats-icon">
+																		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.6 12.53">
+																			<g data-name="Слой 2">
+																				<g data-name="Layer 1">
+																					<path class="svg__fill" d="M1.85,9.43A5.08,5.08,0,0,1,0,5.6C0,2.51,3.05,0,6.8,0s6.8,2.51,6.8,5.6-3.05,5.6-6.8,5.6A8.21,8.21,0,0,1,5,11L1.12,12.53ZM6.8,1C3.6,1,1,3.06,1,5.6A4.12,4.12,0,0,0,2.58,8.75a.8.8,0,0,1,.26.8l-.31,1.34L4.65,10a.79.79,0,0,1,.3-.06l.19,0a7.28,7.28,0,0,0,1.66.2c3.2,0,5.8-2.06,5.8-4.6S10,1,6.8,1Z"/>
+																				</g>
+																			</g>
+																		</svg>
+																	</span>
+																	<span class="section__stats-count">5</span>
+																</div>
+															</div>
+														</div>
+													</a>
+												</li>		
+												<li class="section__item">
+													<a href="" class="section__item-link">
+														<div class="section__item-img" style="background-image:url(assets/img/content/item3.jpg);">							
+														</div>
+														<div class="section__item-desc">
+															<div class="section__item-category">
+																Чизкейки
+															</div>
+															<div class="section__item-title">
+																Кекс с черникой
+															</div>
+															<div class="section__item-price">
+																130 руб.
+															</div>
+															<div class="section__item-stats">
+																<div class="section__stats-btn section__stats-btn_like">
+																	<span class="section__stats-icon">
+																		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">								
+																			<g  data-name="Слой 2">
+																				<g  data-name="Layer 1">
+																					<path class="inner" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.4,3.4,0,0,0,12,3.55Z"/>
+																				</g>
+																				<g  data-name="Layer 2">
+																					<path class="outer" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.42,3.42,0,0,0,12,3.55Zm-1,.29h0c-.28,2.56-3.74,6.07-5,7-1.24-.94-4.7-4.45-5-7,0,0,0-.18,0-.3A2.54,2.54,0,0,1,5.31,1.71L6,2.38l.69-.67A2.54,2.54,0,0,1,11,3.55,2.8,2.8,0,0,1,11,3.84Z"/>
+																				</g>
+																			</g>
+																		</svg>
+																	</span>										
+																	<span class="section__stats-count">5</span>
+																</div>
+																<div class="section__stats-btn section__stats-btn_comments">
+																	<span class="section__stats-icon">
+																		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.6 12.53">
+																			<g data-name="Слой 2">
+																				<g data-name="Layer 1">
+																					<path class="svg__fill" d="M1.85,9.43A5.08,5.08,0,0,1,0,5.6C0,2.51,3.05,0,6.8,0s6.8,2.51,6.8,5.6-3.05,5.6-6.8,5.6A8.21,8.21,0,0,1,5,11L1.12,12.53ZM6.8,1C3.6,1,1,3.06,1,5.6A4.12,4.12,0,0,0,2.58,8.75a.8.8,0,0,1,.26.8l-.31,1.34L4.65,10a.79.79,0,0,1,.3-.06l.19,0a7.28,7.28,0,0,0,1.66.2c3.2,0,5.8-2.06,5.8-4.6S10,1,6.8,1Z"/>
+																				</g>
+																			</g>
+																		</svg>
+																	</span>
+																	<span class="section__stats-count">5</span>
+																</div>
+															</div>
+														</div>
+													</a>
+												</li>		
+												<li class="section__item">
+													<a href="single-item.html" class="section__item-link">
+														<div class="section__item-img" style="background-image:url(assets/img/content/item4.jpg);">							
+														</div>
+														<div class="section__item-desc">
+															<div class="section__item-category">
+																Пироги
+															</div>
+															<div class="section__item-title">
+																Пирожок со шпинатом и сыром шпинатом и сыром шпинатом и сыром
+															</div>
+															<div class="section__item-price">
+																80 руб.
+															</div>
+															<div class="section__item-stats">
+																<div class="section__stats-btn section__stats-btn_like">
+																	<span class="section__stats-icon">
+																		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">						
+																			<g  data-name="Слой 2">
+																				<g  data-name="Layer 1">
+																					<path class="inner" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.4,3.4,0,0,0,12,3.55Z"/>
+																				</g>
+																				<g  data-name="Layer 2">
+																					<path class="outer" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.42,3.42,0,0,0,12,3.55Zm-1,.29h0c-.28,2.56-3.74,6.07-5,7-1.24-.94-4.7-4.45-5-7,0,0,0-.18,0-.3A2.54,2.54,0,0,1,5.31,1.71L6,2.38l.69-.67A2.54,2.54,0,0,1,11,3.55,2.8,2.8,0,0,1,11,3.84Z"/>
+																				</g>
+																			</g>
+																		</svg>
+																	</span>										
+																	<span class="section__stats-count">5</span>
+																</div>
+																<div class="section__stats-btn section__stats-btn_comments">
+																	<span class="section__stats-icon">
+																		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.6 12.53">
+																			<g data-name="Слой 2">
+																				<g data-name="Layer 1">
+																					<path class="svg__fill" d="M1.85,9.43A5.08,5.08,0,0,1,0,5.6C0,2.51,3.05,0,6.8,0s6.8,2.51,6.8,5.6-3.05,5.6-6.8,5.6A8.21,8.21,0,0,1,5,11L1.12,12.53ZM6.8,1C3.6,1,1,3.06,1,5.6A4.12,4.12,0,0,0,2.58,8.75a.8.8,0,0,1,.26.8l-.31,1.34L4.65,10a.79.79,0,0,1,.3-.06l.19,0a7.28,7.28,0,0,0,1.66.2c3.2,0,5.8-2.06,5.8-4.6S10,1,6.8,1Z"/>
+																				</g>
+																			</g>
+																		</svg>
+																	</span>
+																	<span class="section__stats-count">5</span>
+																</div>
+															</div>
+														</div>
+													</a>
+												</li>					
+											</ul>
+										</div>
+									</div>
+									<div class="container">
+										<div class="section__title">Описание</div>
+										<div class="bakery__info">
+											<p>Какой-то небольшой текст о товаре. Пусть занимает несколько строк. Здесь он растянулся на 3 строки</p>
+											<span class="bakery__min-summ">Заказ от <span class="bakery__bold-text">600 руб.</span></span>
+										</div>
+										<div class="section__title">Адрес</div>
+										<div class="bakery__info">
+											<div class="bakery__info-row">
+												<div class="bakery__info-icon ic-map_point ic-map_point-dims"></div>
+												<p class="bakery__info-right">
+													<span class="bakery__bold-text">Москва, ул. Ленина, 18 </span> <br> <span class="bakery__small-text">м. Ленинский проспект</span>
+												</p>
+											</div>
+											<div class="bakery__info-row">
+												<div class="bakery__info-icon ic-phone ic-phone-dims"></div>
+												<p class="bakery__info-right">
+													<span class="bakery__bold-text">8 (495) 676 46 37</span>
+												</p>
+											</div>
+										</div>									
+									</div>
+								</div>
+								<div class="bakery__footer">
+									<div class="container">
+										<div class="bakery__info bakery__info_footer">
+											<div class="bakery__small-text">Ссылки на соцсети</div>
+											<ul class="bakery__footer-list">
+												<li class="bakery__footer-item">
+													<a href="#" class="bakery__footer-link bakery__footer-link_vk">
+														
+													</a>
+												</li>
+												<li class="bakery__footer-item">
+													<a href="#" class="bakery__footer-link bakery__footer-link_fb">
+														
+													</a>
+												</li>
+												<li class="bakery__footer-item">
+													<a href="#" class="bakery__footer-link bakery__footer-link_inst">
+														
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>											
+							</div>
+							<div class="tabs__body-item">
+								<div class="section__goods section__goods_margin-bottom">                    
+									<div class="container">
+										<ul class="section__list">		
+											<li class="section__item">
+												<a href="single-item.html" class="section__item-link">
+													<div class="section__item-img" style="background-image:url(assets/img/content/item1.jpg);">							
+													</div>
+													<div class="section__item-desc">
+														<div class="section__item-category">
+															Пироги
+														</div>
+														<div class="section__item-title">
+															Киш с луком
+														</div>
+														<div class="section__item-price">
+															240 руб.
+														</div>
+														<div class="section__item-stats">
+															<div class="section__stats-btn section__stats-btn_liked">
+																<span class="section__stats-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+																		<g  data-name="Слой 2">
+																			<g  data-name="Layer 1">
+																				<path class="inner" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.4,3.4,0,0,0,12,3.55Z"/>
+																			</g>
+																			<g  data-name="Layer 2">
+																				<path class="outer" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.42,3.42,0,0,0,12,3.55Zm-1,.29h0c-.28,2.56-3.74,6.07-5,7-1.24-.94-4.7-4.45-5-7,0,0,0-.18,0-.3A2.54,2.54,0,0,1,5.31,1.71L6,2.38l.69-.67A2.54,2.54,0,0,1,11,3.55,2.8,2.8,0,0,1,11,3.84Z"/>
+																			</g>
+																		</g>
+																	</svg>
+																</span>										
+																<span class="section__stats-count">5</span>
+															</div>
+															<div class="section__stats-btn section__stats-btn_comments">
+																<span class="section__stats-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.6 12.53">
+																		<g data-name="Слой 2">
+																			<g data-name="Layer 1">
+																				<path class="svg__fill" d="M1.85,9.43A5.08,5.08,0,0,1,0,5.6C0,2.51,3.05,0,6.8,0s6.8,2.51,6.8,5.6-3.05,5.6-6.8,5.6A8.21,8.21,0,0,1,5,11L1.12,12.53ZM6.8,1C3.6,1,1,3.06,1,5.6A4.12,4.12,0,0,0,2.58,8.75a.8.8,0,0,1,.26.8l-.31,1.34L4.65,10a.79.79,0,0,1,.3-.06l.19,0a7.28,7.28,0,0,0,1.66.2c3.2,0,5.8-2.06,5.8-4.6S10,1,6.8,1Z"/>
+																			</g>
+																		</g>
+																	</svg>
+																</span>
+																<span class="section__stats-count">5</span>
+															</div>
+															<div class="section__stats-btn section__stats-btn_cart">
+																<span class="section__stats-icon">
+																	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+																		<g id="Layer_1">
+																			<path  d="M17.87,19.051c-1.191,0-2.16-0.968-2.16-2.16c0-0.27,0.052-0.533,0.155-0.786h-4.826
+																			c0.103,0.254,0.155,0.518,0.155,0.786c0,1.192-0.97,2.16-2.161,2.16s-2.16-0.968-2.16-2.16c0-0.331,0.08-0.658,0.23-0.96
+																			c-0.094-0.084-0.164-0.191-0.202-0.315L3.872,4.323H0.688C0.309,4.323,0,4.016,0,3.636c0-0.379,0.309-0.687,0.688-0.687H4.4
+																			c0.24,0,0.458,0.128,0.581,0.332l0.027-0.003l0.052,0.167l0.657,2.451h15.588c0.375,0,0.681,0.301,0.688,0.675L22,6.571
+																			l-0.025,0.173l-2.042,9.184l-0.068-0.067c-0.021,0.024-0.043,0.046-0.066,0.068c0.152,0.304,0.231,0.633,0.231,0.962
+																			C20.03,18.083,19.061,19.051,17.87,19.051z M17.87,16.105c-0.433,0-0.786,0.352-0.786,0.786c0,0.434,0.353,0.786,0.786,0.786
+																			c0.434,0,0.786-0.352,0.786-0.786C18.655,16.457,18.303,16.105,17.87,16.105z M9.033,16.105c-0.433,0-0.785,0.352-0.785,0.786
+																			c0,0.434,0.353,0.786,0.785,0.786c0.433,0,0.786-0.352,0.786-0.786C9.819,16.457,9.466,16.105,9.033,16.105z M18.79,14.731
+																			l0.352-1.571H17.34l-0.175,1.571H18.79z M15.781,14.731l0.176-1.571h-1.818v1.571H15.781z M12.764,14.731V13.16h-1.818l0.176,1.571
+																			H12.764z M9.738,14.731L9.563,13.16H7.666l0.419,1.571H9.738z M19.446,11.786l0.348-1.572h-2.128l-0.174,1.572H19.446z
+																			M16.109,11.786l0.175-1.572h-2.145v1.572H16.109z M12.764,11.786v-1.572h-2.146l0.173,1.572H12.764z M9.412,11.786l-0.173-1.572
+																			H6.877l0.42,1.572H9.412z M20.102,8.841l0.348-1.572h-2.457l-0.175,1.572H20.102z M16.437,8.841l0.174-1.572h-2.472v1.572H16.437z
+																			M12.764,8.841V7.269h-2.471l0.173,1.572H12.764z M9.083,8.841L8.908,7.269H6.085l0.423,1.572H9.083z"/>
+																		</g>
+																	</svg>
+																</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>		
+											<li class="section__item">
+												<a href="single-item.html" class="section__item-link">
+													<div class="section__item-img" style="background-image:url(assets/img/content/item2.jpg);">							
+													</div>
+													<div class="section__item-desc">
+														<div class="section__item-category">
+															Капкейки
+														</div>
+														<div class="section__item-title">
+															Шоколадный маффин
+														</div>
+														<div class="section__item-price">
+															120 руб.
+														</div>
+														<div class="section__item-stats">
+															<div class="section__stats-btn section__stats-btn_liked">
+																<span class="section__stats-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">									
+																		<g  data-name="Слой 2">
+																			<g  data-name="Layer 1">
+																				<path class="inner" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.4,3.4,0,0,0,12,3.55Z"/>
+																			</g>
+																			<g  data-name="Layer 2">
+																				<path class="outer" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.42,3.42,0,0,0,12,3.55Zm-1,.29h0c-.28,2.56-3.74,6.07-5,7-1.24-.94-4.7-4.45-5-7,0,0,0-.18,0-.3A2.54,2.54,0,0,1,5.31,1.71L6,2.38l.69-.67A2.54,2.54,0,0,1,11,3.55,2.8,2.8,0,0,1,11,3.84Z"/>
+																			</g>
+																		</g>
+																	</svg>
+																</span>											
+																<span class="section__stats-count">5</span>
+															</div>
+															<div class="section__stats-btn section__stats-btn_comments">
+																<span class="section__stats-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.6 12.53">
+																		<g data-name="Слой 2">
+																			<g data-name="Layer 1">
+																				<path class="svg__fill" d="M1.85,9.43A5.08,5.08,0,0,1,0,5.6C0,2.51,3.05,0,6.8,0s6.8,2.51,6.8,5.6-3.05,5.6-6.8,5.6A8.21,8.21,0,0,1,5,11L1.12,12.53ZM6.8,1C3.6,1,1,3.06,1,5.6A4.12,4.12,0,0,0,2.58,8.75a.8.8,0,0,1,.26.8l-.31,1.34L4.65,10a.79.79,0,0,1,.3-.06l.19,0a7.28,7.28,0,0,0,1.66.2c3.2,0,5.8-2.06,5.8-4.6S10,1,6.8,1Z"/>
+																			</g>
+																		</g>
+																	</svg>
+																</span>
+																<span class="section__stats-count">5</span>
+															</div>
+															<div class="section__stats-btn section__stats-btn_cart">
+																<span class="section__stats-icon">
+																	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+																		<g id="Layer_1">
+																			<path  d="M17.87,19.051c-1.191,0-2.16-0.968-2.16-2.16c0-0.27,0.052-0.533,0.155-0.786h-4.826
+																			c0.103,0.254,0.155,0.518,0.155,0.786c0,1.192-0.97,2.16-2.161,2.16s-2.16-0.968-2.16-2.16c0-0.331,0.08-0.658,0.23-0.96
+																			c-0.094-0.084-0.164-0.191-0.202-0.315L3.872,4.323H0.688C0.309,4.323,0,4.016,0,3.636c0-0.379,0.309-0.687,0.688-0.687H4.4
+																			c0.24,0,0.458,0.128,0.581,0.332l0.027-0.003l0.052,0.167l0.657,2.451h15.588c0.375,0,0.681,0.301,0.688,0.675L22,6.571
+																			l-0.025,0.173l-2.042,9.184l-0.068-0.067c-0.021,0.024-0.043,0.046-0.066,0.068c0.152,0.304,0.231,0.633,0.231,0.962
+																			C20.03,18.083,19.061,19.051,17.87,19.051z M17.87,16.105c-0.433,0-0.786,0.352-0.786,0.786c0,0.434,0.353,0.786,0.786,0.786
+																			c0.434,0,0.786-0.352,0.786-0.786C18.655,16.457,18.303,16.105,17.87,16.105z M9.033,16.105c-0.433,0-0.785,0.352-0.785,0.786
+																			c0,0.434,0.353,0.786,0.785,0.786c0.433,0,0.786-0.352,0.786-0.786C9.819,16.457,9.466,16.105,9.033,16.105z M18.79,14.731
+																			l0.352-1.571H17.34l-0.175,1.571H18.79z M15.781,14.731l0.176-1.571h-1.818v1.571H15.781z M12.764,14.731V13.16h-1.818l0.176,1.571
+																			H12.764z M9.738,14.731L9.563,13.16H7.666l0.419,1.571H9.738z M19.446,11.786l0.348-1.572h-2.128l-0.174,1.572H19.446z
+																			M16.109,11.786l0.175-1.572h-2.145v1.572H16.109z M12.764,11.786v-1.572h-2.146l0.173,1.572H12.764z M9.412,11.786l-0.173-1.572
+																			H6.877l0.42,1.572H9.412z M20.102,8.841l0.348-1.572h-2.457l-0.175,1.572H20.102z M16.437,8.841l0.174-1.572h-2.472v1.572H16.437z
+																			M12.764,8.841V7.269h-2.471l0.173,1.572H12.764z M9.083,8.841L8.908,7.269H6.085l0.423,1.572H9.083z"/>
+																		</g>
+																	</svg>
+																</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>		
+											<li class="section__item">
+												<a href="" class="section__item-link">
+													<div class="section__item-img" style="background-image:url(assets/img/content/item3.jpg);">							
+													</div>
+													<div class="section__item-desc">
+														<div class="section__item-category">
+															Чизкейки
+														</div>
+														<div class="section__item-title">
+															Кекс с черникой
+														</div>
+														<div class="section__item-price">
+															130 руб.
+														</div>
+														<div class="section__item-stats">
+															<div class="section__stats-btn section__stats-btn_like">
+																<span class="section__stats-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">									
+																		<g  data-name="Слой 2">
+																			<g  data-name="Layer 1">
+																				<path class="inner" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.4,3.4,0,0,0,12,3.55Z"/>
+																			</g>
+																			<g  data-name="Layer 2">
+																				<path class="outer" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.42,3.42,0,0,0,12,3.55Zm-1,.29h0c-.28,2.56-3.74,6.07-5,7-1.24-.94-4.7-4.45-5-7,0,0,0-.18,0-.3A2.54,2.54,0,0,1,5.31,1.71L6,2.38l.69-.67A2.54,2.54,0,0,1,11,3.55,2.8,2.8,0,0,1,11,3.84Z"/>
+																			</g>
+																		</g>
+																	</svg>
+																</span>										
+																<span class="section__stats-count">5</span>
+															</div>
+															<div class="section__stats-btn section__stats-btn_comments">
+																<span class="section__stats-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.6 12.53">
+																		<g data-name="Слой 2">
+																			<g data-name="Layer 1">
+																				<path class="svg__fill" d="M1.85,9.43A5.08,5.08,0,0,1,0,5.6C0,2.51,3.05,0,6.8,0s6.8,2.51,6.8,5.6-3.05,5.6-6.8,5.6A8.21,8.21,0,0,1,5,11L1.12,12.53ZM6.8,1C3.6,1,1,3.06,1,5.6A4.12,4.12,0,0,0,2.58,8.75a.8.8,0,0,1,.26.8l-.31,1.34L4.65,10a.79.79,0,0,1,.3-.06l.19,0a7.28,7.28,0,0,0,1.66.2c3.2,0,5.8-2.06,5.8-4.6S10,1,6.8,1Z"/>
+																			</g>
+																		</g>
+																	</svg>
+																</span>
+																<span class="section__stats-count">5</span>
+															</div>
+															<div class="section__stats-btn section__stats-btn_cart">
+																<span class="section__stats-icon">
+																	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+																		<g id="Layer_1">
+																			<path  d="M17.87,19.051c-1.191,0-2.16-0.968-2.16-2.16c0-0.27,0.052-0.533,0.155-0.786h-4.826
+																			c0.103,0.254,0.155,0.518,0.155,0.786c0,1.192-0.97,2.16-2.161,2.16s-2.16-0.968-2.16-2.16c0-0.331,0.08-0.658,0.23-0.96
+																			c-0.094-0.084-0.164-0.191-0.202-0.315L3.872,4.323H0.688C0.309,4.323,0,4.016,0,3.636c0-0.379,0.309-0.687,0.688-0.687H4.4
+																			c0.24,0,0.458,0.128,0.581,0.332l0.027-0.003l0.052,0.167l0.657,2.451h15.588c0.375,0,0.681,0.301,0.688,0.675L22,6.571
+																			l-0.025,0.173l-2.042,9.184l-0.068-0.067c-0.021,0.024-0.043,0.046-0.066,0.068c0.152,0.304,0.231,0.633,0.231,0.962
+																			C20.03,18.083,19.061,19.051,17.87,19.051z M17.87,16.105c-0.433,0-0.786,0.352-0.786,0.786c0,0.434,0.353,0.786,0.786,0.786
+																			c0.434,0,0.786-0.352,0.786-0.786C18.655,16.457,18.303,16.105,17.87,16.105z M9.033,16.105c-0.433,0-0.785,0.352-0.785,0.786
+																			c0,0.434,0.353,0.786,0.785,0.786c0.433,0,0.786-0.352,0.786-0.786C9.819,16.457,9.466,16.105,9.033,16.105z M18.79,14.731
+																			l0.352-1.571H17.34l-0.175,1.571H18.79z M15.781,14.731l0.176-1.571h-1.818v1.571H15.781z M12.764,14.731V13.16h-1.818l0.176,1.571
+																			H12.764z M9.738,14.731L9.563,13.16H7.666l0.419,1.571H9.738z M19.446,11.786l0.348-1.572h-2.128l-0.174,1.572H19.446z
+																			M16.109,11.786l0.175-1.572h-2.145v1.572H16.109z M12.764,11.786v-1.572h-2.146l0.173,1.572H12.764z M9.412,11.786l-0.173-1.572
+																			H6.877l0.42,1.572H9.412z M20.102,8.841l0.348-1.572h-2.457l-0.175,1.572H20.102z M16.437,8.841l0.174-1.572h-2.472v1.572H16.437z
+																			M12.764,8.841V7.269h-2.471l0.173,1.572H12.764z M9.083,8.841L8.908,7.269H6.085l0.423,1.572H9.083z"/>
+																		</g>
+																	</svg>
+																</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>		
+											<li class="section__item">
+												<a href="single-item.html" class="section__item-link">
+													<div class="section__item-img" style="background-image:url(assets/img/content/item4.jpg);">							
+													</div>
+													<div class="section__item-desc">
+														<div class="section__item-category">
+															Пироги
+														</div>
+														<div class="section__item-title">
+															Пирожок со шпинатом и сыром шпинатом и сыром шпинатом и сыром
+														</div>
+														<div class="section__item-price">
+															80 руб.
+														</div>
+														<div class="section__item-stats">
+															<div class="section__stats-btn section__stats-btn_like">
+																<span class="section__stats-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">						
+
+																		<g  data-name="Слой 2">
+																			<g  data-name="Layer 1">
+																				<path class="inner" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.4,3.4,0,0,0,12,3.55Z"/>
+																			</g>
+																			<g  data-name="Layer 2">
+																				<path class="outer" d="M12,3.55A3.54,3.54,0,0,0,6,1,3.54,3.54,0,0,0,0,3.55C0,3.71,0,3.91,0,4c.39,3.5,5.45,8,6,8s5.59-4.55,6-8A3.42,3.42,0,0,0,12,3.55Zm-1,.29h0c-.28,2.56-3.74,6.07-5,7-1.24-.94-4.7-4.45-5-7,0,0,0-.18,0-.3A2.54,2.54,0,0,1,5.31,1.71L6,2.38l.69-.67A2.54,2.54,0,0,1,11,3.55,2.8,2.8,0,0,1,11,3.84Z"/>
+																			</g>
+																		</g>
+																	</svg>
+																</span>										
+																<span class="section__stats-count">5</span>
+															</div>
+															<div class="section__stats-btn section__stats-btn_comments">
+																<span class="section__stats-icon">
+																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.6 12.53">
+																		<g data-name="Слой 2">
+																			<g data-name="Layer 1">
+																				<path class="svg__fill" d="M1.85,9.43A5.08,5.08,0,0,1,0,5.6C0,2.51,3.05,0,6.8,0s6.8,2.51,6.8,5.6-3.05,5.6-6.8,5.6A8.21,8.21,0,0,1,5,11L1.12,12.53ZM6.8,1C3.6,1,1,3.06,1,5.6A4.12,4.12,0,0,0,2.58,8.75a.8.8,0,0,1,.26.8l-.31,1.34L4.65,10a.79.79,0,0,1,.3-.06l.19,0a7.28,7.28,0,0,0,1.66.2c3.2,0,5.8-2.06,5.8-4.6S10,1,6.8,1Z"/>
+																			</g>
+																		</g>
+																	</svg>
+																</span>
+																<span class="section__stats-count">5</span>
+															</div>
+															<div class="section__stats-btn section__stats-btn_cart">
+																<span class="section__stats-icon">
+																	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+																		<g id="Layer_1">
+																			<path  d="M17.87,19.051c-1.191,0-2.16-0.968-2.16-2.16c0-0.27,0.052-0.533,0.155-0.786h-4.826
+																			c0.103,0.254,0.155,0.518,0.155,0.786c0,1.192-0.97,2.16-2.161,2.16s-2.16-0.968-2.16-2.16c0-0.331,0.08-0.658,0.23-0.96
+																			c-0.094-0.084-0.164-0.191-0.202-0.315L3.872,4.323H0.688C0.309,4.323,0,4.016,0,3.636c0-0.379,0.309-0.687,0.688-0.687H4.4
+																			c0.24,0,0.458,0.128,0.581,0.332l0.027-0.003l0.052,0.167l0.657,2.451h15.588c0.375,0,0.681,0.301,0.688,0.675L22,6.571
+																			l-0.025,0.173l-2.042,9.184l-0.068-0.067c-0.021,0.024-0.043,0.046-0.066,0.068c0.152,0.304,0.231,0.633,0.231,0.962
+																			C20.03,18.083,19.061,19.051,17.87,19.051z M17.87,16.105c-0.433,0-0.786,0.352-0.786,0.786c0,0.434,0.353,0.786,0.786,0.786
+																			c0.434,0,0.786-0.352,0.786-0.786C18.655,16.457,18.303,16.105,17.87,16.105z M9.033,16.105c-0.433,0-0.785,0.352-0.785,0.786
+																			c0,0.434,0.353,0.786,0.785,0.786c0.433,0,0.786-0.352,0.786-0.786C9.819,16.457,9.466,16.105,9.033,16.105z M18.79,14.731
+																			l0.352-1.571H17.34l-0.175,1.571H18.79z M15.781,14.731l0.176-1.571h-1.818v1.571H15.781z M12.764,14.731V13.16h-1.818l0.176,1.571
+																			H12.764z M9.738,14.731L9.563,13.16H7.666l0.419,1.571H9.738z M19.446,11.786l0.348-1.572h-2.128l-0.174,1.572H19.446z
+																			M16.109,11.786l0.175-1.572h-2.145v1.572H16.109z M12.764,11.786v-1.572h-2.146l0.173,1.572H12.764z M9.412,11.786l-0.173-1.572
+																			H6.877l0.42,1.572H9.412z M20.102,8.841l0.348-1.572h-2.457l-0.175,1.572H20.102z M16.437,8.841l0.174-1.572h-2.472v1.572H16.437z
+																			M12.764,8.841V7.269h-2.471l0.173,1.572H12.764z M9.083,8.841L8.908,7.269H6.085l0.423,1.572H9.083z"/>
+																		</g>
+																	</svg>
+																</span>
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>					
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body-item">
+								<!-- SECTION -->
+								<secion class="section comments">
+									<div class="container">
+										<div class="section__title">
+											<h3>Комментарии</h3>
+										</div>					
+										<ul class="comments__list">
+											<li class="comments__item">
+												<div class="comments__msg-info">
+													<div class="comments__name">
+														Вадим
+													</div>
+													<div class="comments__date">
+														01.10.16
+													</div>
+													<div class="bakery__rating bakery__rating_comment">
+														<ul class="bakery__rating-list">
+															<li class="bakery__rating-item"></li>
+															<li class="bakery__rating-item bakery__rating-item_active"></li>
+															<li class="bakery__rating-item"></li>
+															<li class="bakery__rating-item"></li>
+															<li class="bakery__rating-item"></li>
+														</ul>														
+													</div>
+												</div>
+												<div class="comments__msg">
+													Вкусный кекс! И недорого!
+												</div>
+											</li>
+											<li class="comments__item">
+												<div class="comments__msg-info">
+													<div class="comments__name">
+														Анна Семенова
+													</div>
+													<div class="comments__date">
+														27.09.16
+													</div>
+													<div class="bakery__rating bakery__rating_comment">
+														<ul class="bakery__rating-list ">
+															<li class="bakery__rating-item"></li>
+															<li class="bakery__rating-item bakery__rating-item_active"></li>
+															<li class="bakery__rating-item"></li>
+															<li class="bakery__rating-item"></li>
+															<li class="bakery__rating-item"></li>
+														</ul>														
+													</div>
+												</div>
+												<div class="comments__msg">
+													А еще у них есть такой же, но только с вишней! Ммммм)))
+												</div>
+											</li>
+											<li class="comments__item">
+												<div class="comments__msg-info">
+													<div class="comments__name">
+														Вася
+													</div>
+													<div class="comments__date">
+														15.09.16
+													</div>
+													<div class="bakery__rating bakery__rating_comment">
+														<ul class="bakery__rating-list">
+															<li class="bakery__rating-item"></li>
+															<li class="bakery__rating-item bakery__rating-item_active"></li>
+															<li class="bakery__rating-item"></li>
+															<li class="bakery__rating-item"></li>
+															<li class="bakery__rating-item"></li>
+														</ul>														
+													</div>
+												</div>
+												<div class="comments__msg">
+													Мне понравился.
+												</div>												
+											</li>
+										</ul>
+										<div class="comments__form">
+											<form action="#" class="comments__form-tag">
+												<div class="comments__form-row">
+													<input type="text" name="name" class="comments__input" placeholder="Имя">
+												</div>
+												<div class="comments__form-row">
+													<textarea name="msg" class="comments__input comments__input_msg" placeholder="Ваш комментарий"></textarea>
+												</div>
+												<div class="comments__form-row">
+													<button type="submit" class="comments__input comments__input_btn" value="send">отправить комментарий</button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</secion>
+								<!-- END SECTION -->
+							</div>
+						</div>
+					</section>
+					<!-- END SECTION -->
+				</div>
+				<!-- END CONTENT -->
+				<!-- SEARCH -->
+				<aside class="aside search">				        
+					<div class="search__header">
+						<div class="container">
+							<form action="#" class="search__form">
+								<input type="search" name="inputsearch" class="search__input-search" placeholder="Поиск...">
+								<input type="submit" hidden="hidden">
+								<a href="#" class="search__cancel-btn" data-target="open-search">Отмена</a>
+							</form>
+						</div>
+					</div>
+					<div class="search__result">
+						<ul class="search__list">
+							<li class="search__item search__item_category">Пекарни</li>
+							<li class="search__item"><a href="#" class="search__item-link">Осетинские пироги</a></li>
+							<li class="search__item"><a href="#" class="search__item-link">Пироги как дома</a></li>
+						</ul>
+						<ul class="search__list">
+							<li class="search__item search__item_category">Товары</li>
+							<li class="search__item"><a href="single-item.html" class="search__item-link">Пирог с черникой</a></li>
+							<li class="search__item"><a href="single-item.html" class="search__item-link">Пирог со шпинатом и сыром</a></li>
+							<li class="search__item"><a href="single-item.html" class="search__item-link">Куриный пирог</a></li>
+							<li class="search__item"><a href="single-item.html" class="search__item-link">Пирог с сердцем</a></li>
+						</ul>
+					</div>				
+				</aside>
+				<!-- END SEARCH -->
+			</div>		
+		</div>
+	</div>
+	123	
+	<script src="js/vendor.js"></script>
+	<script src="js/common.min.js"></script>
+</body>
+</html>

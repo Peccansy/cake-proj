@@ -1,5 +1,9 @@
+.categories {
+	min-width: 320px;
+}
 .categories__inner {
 	overflow: hidden;
+	min-width: 100%;
 }
 .categories__list {
 	font-size: 0;

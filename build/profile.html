@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<title>CakeProj</title>	
+	<link rel="stylesheet" href="styles/vendor.css">
+	<link rel="stylesheet" href="styles/build.css">
+</head>
+<body>
+	<div class="wrapper wrapper_no-footer">
+		<div class="wrapper__inner">
+			<!-- NAV -->
+			<aside class="aside menu">
+				<div class="menu__inner">
+					<div class="menu__info">
+						<div class="menu__info-text">
+							<a href="#" class="menu__info-link">Скачайте приложение</a>, <br> чтобы получить бонусы
+						</div>
+					</div>
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item nav__item_active">
+								<a href="index.html" class="nav__link"><i class="nav__link-icon ic-home ic-home-dims"></i><span class="nav__link-text">Главная</span></a>
+							</li>
+							<li class="nav__item">
+								<a href="bakery.html" class="nav__link"><i class="nav__link-icon ic-bakery ic-bakery-dims"></i><span class="nav__link-text">Пекарни</span></a>
+							</li>
+							<li class="nav__item">
+								<a href="goods.html" class="nav__link"><i class="nav__link-icon ic-bag ic-bag-dims"></i><span class="nav__link-text">Товары</span></a>
+							</li>
+							<li class="nav__item">
+								<a href="" class="nav__link"><i class="nav__link-icon ic-sale ic-sale-dims"></i><span class="nav__link-text">Акции</span></a>
+							</li>
+							<li class="nav__item">
+								<a href="" class="nav__link"><i class="nav__link-icon ic-fav ic-fav-dims"></i><span class="nav__link-text">Избранное</span></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</aside>
+			<!-- NAV END -->
+			<!-- CONTENT -->
+			<div class="content">
+				<!-- HEADER -->
+				<header class="header">
+					<div class="container">
+						<div class="header__left">
+							<div class="header__icon">
+								<a href="#" class="header__btn ic-menu ic-menu-dims" data-target="open-menu"></a>
+							</div>                    
+							<div class="header__icon">
+								<a href="profile-1.html" class="header__btn ic-cart ic-cart-dims"></a>
+							</div>
+						</div>
+						<div class="header__center">
+							<h1>Мой профиль</h1>
+						</div>
+						<div class="header__right">                    
+							<div class="header__icon">
+								<a href="#" class="header__btn ic-profile ic-profile-dims"></a>
+							</div>                    
+							<div class="header__icon">
+								<a href="#" class="header__btn ic-search ic-search-dims" data-target="open-search"></a>
+							</div>
+						</div>
+					</div>
+				</header>
+				<!-- END HEADER -->
+				<!-- SECTION -->
+				<section class="profile">									
+					<div class="tabs">
+						<div class="tabs__link">
+							<ul class="tabs__link-list">
+								<li class="tabs__link-item tabs__link-item_2 tabs__link-item_active">
+									Обо мне
+								</li>
+								<li class="tabs__link-item tabs__link-item_2">
+									Мои заказы
+								</li>								
+							</ul>
+						</div>
+						<div class="tabs__body">							
+							<div class="tabs__body-item tabs__body-item_active">
+								<div class="profile__avatar">
+									<div class="container">
+										<div class="profile__left">
+											<div class="profile__avatar-img" style="background-image: url('assets/img/icons/profile_big.svg');">
+												<img src="assets/img/icons/profile_big.svg" alt="#" class="profile__avatar-pic">
+											</div>
+										</div>
+										<div class="profile__right">
+											<div class="profile__name">
+												Владимир
+											</div>
+											<div class="profile__upload">
+												<form action="#" class="profile__form-tag">
+													<label for="user-avatar" class="profile__uplouad-label">
+														Загрузить фото
+														<input id="user-avatar" type="file" name="user-avatar" class="profile__input-upload" accept="image/jpeg,image/png,image/gif" hidden>
+													</label>
+												</form>										
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="profile__form">
+									<div class="profile__form-title">
+										Личная информация
+									</div>
+									<div class="profile__form-tag">
+										<div class="profile__form-row">
+											<div class="profile__form-elem">
+												<label class="profile__form-label" for="name">Имя</label>
+											</div>
+											<div class="profile__form-elem">
+												<input type="text" class="profile__form-input" id="name" name="name">
+											</div>
+										</div>
+										<div class="profile__form-row">
+											<div class="profile__form-elem">
+												<label class="profile__form-label" for="tel">Телефон</label>
+											</div>
+											<div class="profile__form-elem">
+												<input type="tel" class="profile__form-input" id="tel" name="tel">
+											</div>
+										</div>
+										<div class="profile__form-row">
+											<div class="profile__form-elem">
+												<label class="profile__form-label" for="adress">Адрес доставки</label>
+											</div>
+											<div class="profile__form-elem">
+												<textarea rows="1" name="adress" id="adress" class="profile__form-input profile__form-input_textarea"></textarea>
+											</div>
+										</div>
+										<div class="profile__form-row">
+											<div class="profile__form-elem">
+												<label class="profile__form-label" for="under">Станция метро</label>
+											</div>
+											<div class="profile__form-elem">
+												<div class="select-wrapper">
+													<select class="profile__form-input profile__form-input_select" name="underground" id="under">
+														<option class="profile__form-input_option" value="1">
+															Автозаводская
+														</option>
+														<option class="profile__form-input_option" value="2">
+															Царицыно
+														</option>
+														<option class="profile__form-input_option" value="3">
+															Курская
+														</option>
+													</select>
+												</div>
+											</div>								
+										</div>	
+									</div>
+									<div class="profile__form-title">
+										email и пароль
+									</div>
+									<div class="profile__form-row">
+										<div class="profile__form-elem">
+											<div class="profile__form-input profile__form-input_block">vladimir@gmail.com</div>
+										</div>
+										<div class="profile__form-elem">
+											<a href="#" data-name="modal-trigger" class="profile__form-link">Изменить</a>
+										</div>
+									</div>	
+									<div class="profile__form-row">
+										<div class="profile__form-elem">
+											<div class="profile__form-input profile__form-input_block">Пароль</div>
+										</div>
+										<div class="profile__form-elem">
+											<a href="#" data-name="modal-trigger" class="profile__form-link">Изменить</a>
+										</div>
+									</div>	
+								</div>
+							</div>
+							<div class="tabs__body-item">
+								<div class="orders">
+									<div class="orders__inner">
+										<div class="container">
+											<ul class="orders__list">
+												<li class="orders__item">
+													<a href="single-order.html" class="orders__link">
+														<div class="orders__item-row">
+															<div class="orders__item-elem">
+																<div class="orders__date">Заказ от 12.09.2016</div>
+																<div class="orders__bakery">Сладкие штучки</div>
+															</div>
+															<div class="orders__item-elem">
+																<div class="profile__form-link">Повторить заказ</div>
+															</div>
+														</div>
+														<div class="orders__item-row">
+															<div class="orders__item-text">2 товара на сумму 450 руб.</div>
+														</div>
+														<div class="orders__icon">														
+														</div>
+													</a>
+												</li>
+												<li class="orders__item">
+													<a href="single-order.html" class="orders__link">
+														<div class="orders__item-row">
+															<div class="orders__item-elem">
+																<div class="orders__date">Заказ от 12.09.2016</div>
+																<div class="orders__bakery">Сладкие штучки</div>
+															</div>
+															<div class="orders__item-elem">
+																<div class="profile__form-link">Повторить заказ</div>
+															</div>
+														</div>
+														<div class="orders__item-row">
+															<div class="orders__item-text">2 товара на сумму 450 руб.</div>
+														</div>
+														<div class="orders__icon">														
+														</div>
+													</a>
+												</li>
+												<li class="orders__item">
+													<a href="single-order.html" class="orders__link">
+														<div class="orders__item-row">
+															<div class="orders__item-elem">
+																<div class="orders__date">Заказ от 12.09.2016</div>
+																<div class="orders__bakery">Сладкие штучки</div>
+															</div>
+															<div class="orders__item-elem">
+																<div class="profile__form-link">Повторить заказ</div>
+															</div>
+														</div>
+														<div class="orders__item-row">
+															<div class="orders__item-text">2 товара на сумму 450 руб.</div>
+														</div>
+														<div class="orders__icon">														
+														</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>								
+							</div>					
+						</secion>
+						<!-- END SECTION -->
+					</div>
+				</div>
+			</section>
+			<!-- END SECTION -->
+		</div>
+		<!-- END CONTENT -->
+		<!-- SEARCH -->
+		<aside class="aside search">				        
+			<div class="search__header">
+				<div class="container">
+					<form action="#" class="search__form">
+						<input type="search" name="inputsearch" class="search__input-search" placeholder="Поиск...">
+						<input type="submit" hidden="hidden">
+						<a href="#" class="search__cancel-btn" data-target="open-search">Отмена</a>
+					</form>
+				</div>
+			</div>
+			<div class="search__result">
+				<ul class="search__list">
+					<li class="search__item search__item_category">Пекарни</li>
+					<li class="search__item"><a href="#" class="search__item-link">Осетинские пироги</a></li>
+					<li class="search__item"><a href="#" class="search__item-link">Пироги как дома</a></li>
+				</ul>
+				<ul class="search__list">
+					<li class="search__item search__item_category">Товары</li>
+					<li class="search__item"><a href="single-item.html" class="search__item-link">Пирог с черникой</a></li>
+					<li class="search__item"><a href="single-item.html" class="search__item-link">Пирог со шпинатом и сыром</a></li>
+					<li class="search__item"><a href="single-item.html" class="search__item-link">Куриный пирог</a></li>
+					<li class="search__item"><a href="single-item.html" class="search__item-link">Пирог с сердцем</a></li>
+				</ul>
+			</div>				
+		</aside>
+		<!-- END SEARCH -->
+	</div>		
+</div>
+</div>	
+<script src="js/vendor.js"></script>
+<script src="js/common.min.js"></script>
+</body>
+</html>

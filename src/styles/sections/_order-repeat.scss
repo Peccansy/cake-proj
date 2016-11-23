@@ -1,0 +1,32 @@
+.order-single {
+	background-color: #fff;
+	margin-bottom: 30px;
+}
+.order-single__info-block {
+	@extend .search__item;
+	@extend .search__item_category;
+	text-transform: none;
+	font-family: 'source_sans_proregular';
+	font-size: (14/11)+rem;
+}
+.order-single__text {
+	&_black {
+		color: $black;
+	}
+}
+.order-single__row {
+	font-size: 0;
+}
+.order-single__elem {
+	@include inline-block(middle);
+	width: 50%;
+	color: $gray;
+	font-size: (14/11)+rem;
+	&_right {
+		text-align: right;
+	}
+	&_bold {
+		color: $black;
+		font-family: 'source_sans_prosemibold';
+	}
+}

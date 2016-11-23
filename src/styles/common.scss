@@ -20,6 +20,7 @@ $gray: #858585;
 @import 'layout/adjusments';
 @import 'layout/fonts';
 @import 'layout/icons';
+@import 'layout/pickmeup';
 
 //SECTION IMPORT
 
@@ -28,4 +29,17 @@ $gray: #858585;
 @import 'sections/promo';
 @import 'sections/main-sections';
 @import 'sections/side-menu';
-@import 'sections/side-search'
+@import 'sections/side-search';
+@import 'sections/single-item';
+@import 'sections/registation';
+@import 'sections/comments';
+@import 'sections/cart';
+@import 'sections/info-block';
+@import 'sections/order';
+@import 'sections/cart-form';
+@import 'sections/slider.scss';
+@import 'sections/bakery.scss';
+@import 'sections/tabs.scss';
+@import 'sections/profile';
+@import 'sections/orders';
+@import 'sections/order-repeat';

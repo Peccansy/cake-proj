@@ -1,0 +1,52 @@
+.orders__list {
+	margin-bottom: 19px;	
+}
+.orders__item {
+	font-size: 1rem;
+	background-color: #F8F8F8;	
+	margin-bottom: 10px;
+	border: 1px solid #E5E5E5;
+	position: relative;
+}
+.orders__link {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	height: 100%;
+	padding-top: 20px;
+}
+.orders__item-row {
+	padding: 0 10px;
+	margin-bottom: 20px;
+	font-size: 0;
+	color: $black;
+}
+.orders__item-text {
+	font-size: (14/11)+rem;
+}
+.orders__item-elem {
+	@include inline-block(top);
+	width: 50%;
+	text-align: left;
+	.profile__form-link {
+		text-align: right;
+	}		
+}
+.orders__date {
+	@include font('source_sans_prosemibold', (14/11)+rem, 20px, normal);
+	color: $black;
+}
+.orders__bakery {
+	font-size: 1rem;
+	color: $gray;
+}
+.orders__icon {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background:transparent url('../assets/img/icons/more-gray.svg') center no-repeat;
+	background-size: cover;
+	position: absolute;
+	right: 10px;
+	bottom: 0;
+}

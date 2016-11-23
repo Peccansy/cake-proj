@@ -18,6 +18,15 @@
 		z-index: 2;
 	}
 }
+.promo__main-link {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 999;		
+}
 .promo__text-block {
 	color: #fff;
 	text-align: center;
@@ -43,5 +52,11 @@
 	text-transform: uppercase;
 }
 .promo__link {
-	color: #fff;
+	color: #fff;	
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	margin-top: 5px;
+	z-index: 1000;		
 }

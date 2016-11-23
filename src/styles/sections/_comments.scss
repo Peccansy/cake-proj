@@ -1,0 +1,46 @@
+.comments__list {
+	margin-bottom: 15px;
+}
+.comments__item {
+	display: block;
+	margin-bottom: 15px;
+}
+.comments__msg-info {
+	font-size: 0;
+}
+.comments__name, .comments__date {
+	@include inline-block (middle);
+	font-size: 1rem;
+}
+.comments__name {
+	@include font('source_sans_prosemibold', (14/11)+rem, normal, 20px);
+	color: $black
+}
+.comments__date {
+	color: $gray;
+	margin-left: 10px;
+}
+.comments__msg {
+	font-size: (14/11)+rem;
+	color: $gray;	
+}
+.comments__form-row {
+	display: block;
+	margin-bottom: 19px;
+}
+.comments__input {
+	@extend .search__input-search;
+	width: 100%;
+	background-image: none;
+	padding: 0 10px;
+	&_msg {
+		height: 160px;
+    	resize: none;
+    	padding-top: 10px;
+	}
+	&_btn {
+		border-color: $btnBg;
+		color: $btnBg;
+		text-transform: uppercase;
+	}
+}

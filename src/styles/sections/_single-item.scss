@@ -1,0 +1,186 @@
+.cake__img {
+	width: 100%;
+	overflow: hidden;
+	background-position: center;
+	background-size: cover;	
+	height: 320px;
+	margin-bottom: 20px;
+	position: relative;
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(89,89,89,0) 65%, rgba(0,0,0,0.4) 100%);
+		background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(89,89,89,0) 65%,rgba(0,0,0,0.4) 100%);
+		background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(89,89,89,0) 65%,rgba(0,0,0,0.4) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#66000000',GradientType=0 );
+	}
+}
+.cake__stats {
+	color: #fff;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	margin-left: -10px;	
+}
+.cake__pic {
+	display: none;
+}
+.cake__stats-btn {
+	@extend .section__stats-btn;	
+
+	&_like {
+		.inner {
+			fill: transparent;
+		}
+		.outer {
+			fill: #fff;
+		}
+	}
+	&_comments {
+		.svg__fill {
+			fill: #fff;
+		}
+	}
+	&_liked {
+		.inner {
+			fill: #fff;
+		}
+		.outer {
+			fill: #fff;
+		}
+	}
+}
+.cake__stats-icon {
+	@extend .section__stats-icon;
+	width: 22px;
+	height: 22px;
+	overflow: hidden;
+}
+.cake__stats-count {
+	@extend .section__stats-count;
+	color: #fff;
+	font-size: (14/11)+rem;
+}
+.cake__desc {
+	margin-bottom: 40px;
+}
+.cake__title {
+	@extend .section__item-title;
+	font-size: 20px;
+	margin-bottom: 15px;
+	max-height: 100%;
+	overflow: visible;
+}
+.cake__category {
+	@extend .section__item-category;
+}
+.cake__item-count {
+	@include inline-block(middle);
+	width: 50%;
+	font-size: 0;
+	text-align: right;
+}
+.cake__add {
+	margin-bottom: 20px;
+	font-size: 0;
+}
+.cake__form-tag {
+	font-size: 0;
+}
+.cake__price {
+	@include inline-block(middle);
+	@include font('source_sans_prosemibold', (26/11)+rem, normal, 20px);
+	width: 50%;	
+}
+.cake__add-row {
+	margin-bottom: 20px;
+}
+.cake__input {	
+	@include inline-block(middle)
+	font-size: 1rem;
+	width: 30px;
+	height: 30px;	
+	border: 1px solid #E5E5E5;
+	text-align: center;
+	background-color: transparent;	
+	outline: none;
+	&_submit {
+		width: 100%;
+		max-width: none;
+		text-transform: uppercase;
+		color: #fff;
+		background-color: $btnBg;
+		border: none;
+		height: 40px;
+		border-radius: 7px;
+	}
+	&_left {
+		background:transparent url('../assets/img/icons/minus.svg') center no-repeat;
+		border-radius: 5px 0 0 5px;
+		background-size: 12px;
+	}
+	&_right {		
+		background:transparent url('../assets/img/icons/plus.svg') center no-repeat;
+		border-radius: 0 5px 5px 0;
+		background-size: 12px;
+	}
+}
+.cake__info {
+	color: $gray;
+	font-size: (14/11)+rem;
+	margin-bottom: 30px;
+}	
+.cake__prop-title {	
+	font-size: 0;
+	margin-bottom: 20px;
+	&_nomargin {
+		margin: 0;
+	}
+}
+.cake__prop-icon {	
+	@include inline-block(top);
+}
+.cake__prop-text {
+	@extend .cake__prop-icon;
+	font-size: (14/11)+rem;
+	margin-left: 8px;
+	max-width: 89%;
+	&_gray {		
+		color: $gray;
+		margin-left: 0;
+		
+	}
+}
+.cake__table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+.cake__tcell {
+	border: 1px solid #E5E5E5;
+	padding: 10px 19px;
+	font-size: 0;
+	width: 50%;
+	&:first-child {
+		border-left: none;
+	}
+	&:last-child {
+		border-right: none;
+	}	
+}
+.cake__tkey {
+	@include inline-block (middle);
+	width: 50%;
+	color: $gray;
+	font-size: (14/11)+rem;
+}
+.cake__tvalue {
+	@extend .cake__tkey;
+	color: $black;
+	text-align: right;
+}

@@ -1,0 +1,162 @@
+.bakery__bakeshop {
+	padding: 19px 0;
+	background-color: #fff;	
+}
+.bakery__left {
+	width: 30%;
+	float: left;
+}
+.bakery__right {
+	float: right;
+	width: 69%;
+}
+.bakery__logo {
+	@include inline-block(middle);
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	overflow: hidden;	
+}
+.bakery__logo-pic {
+	display: block;	
+	max-width: 100%;
+	height: auto;
+}
+.bakery__title {
+	@extend .section__title;
+	margin-bottom: 5px;
+}
+.bakery__rating {
+	width: 100%;
+	line-height: 25px;
+	@extend %clearfix;
+	&_comment {
+		width: auto;
+		margin-left: 10px;
+		@include inline-block(middle);
+		line-height: 20px;
+		.bakery__rating-item {
+			font-size: (14/11)+rem;
+			&:hover {
+				font-size: (14/11)+rem;
+			}
+		}
+	}
+}
+.bakery__rating-list {
+	float: left;
+	margin-left: -5px;	
+}
+.bakery__rating-item {
+	float: right;
+	font-size: (20/11)+rem;
+	color: #FECB6E;
+	cursor: pointer;
+	margin-left: 5px;
+	&:hover {
+		font-size: (25/11)+rem;
+	}
+	&::before {
+		content: "\2606";
+	}
+	&:hover ~ &::before {
+		content: "\2605";
+	}
+	&:hover::before {
+		content: "\2605";
+	}
+	&_active {
+		&::before {
+			content: "\2605";
+		}
+		& ~ .bakery__rating-item::before {
+			content: "\2605";
+		}
+	}	
+}
+.bakery__rating-count {
+	color: $gray;
+	display: inline-block;
+	font-size: (14/11)+rem;
+	margin-left: 5px;
+
+	&::before {
+		content: '(';
+	}
+	&::after {
+		content: ')';
+	}
+}
+.bakery__tags {
+	width: 100%;
+	line-height: 15px;
+}
+.bakery__tag {
+	@extend .section__item-category;
+	&::after {
+		content: ', ';
+	}
+	&:last-child::after {
+		content: '';
+	}
+}
+.bakery__info {
+	@extend .cake__info;
+	p {
+		margin-bottom: 20px;
+	}
+	&_footer {
+		margin-bottom: 0;
+	}	
+}
+.bakery__info-icon	{
+	@include inline-block(middle);
+	margin-bottom: 5px;
+}
+.bakery__info-right {
+	@include inline-block(middle);
+	width: 85%;
+	margin-left: 10px;
+	margin-bottom: 0 !important;
+}
+.bakery__bold-text {
+	@include font('source_sans_prosemibold', (14/11)+rem, 20px, normal);
+	color: $black;
+}
+.bakery__small-text {
+	font-size: 1rem;
+}
+.bakery__footer {
+	padding: 20px 0;
+	border-top:1px solid #E2E2E2;
+	text-align: center;
+}
+.bakery__footer-list {
+	width: 100%;
+	font-size: 0;
+	margin-top: 10px;	
+}
+.bakery__footer-item {
+	@include inline-block(middle);	
+	font-size: 1rem;
+	width: (22/11)+rem;
+	height: (22/11)+rem;
+	background-color: $btnColor;
+	border-radius: 50%;
+	margin-left: 22px;
+	&:first-child {
+		margin-left: 0;
+	}
+}
+.bakery__footer-link {
+	@include inline-block(middle);
+	text-decoration: none;
+	color: inherit;
+	height: 10px;
+    width: 12px;
+}
+@each $item in (vk, fb, inst) {
+	.bakery__footer-link_#{$item} {
+		background:transparent url('../assets/img/icons/#{$item}_wt.svg') 50% no-repeat;
+	}
+}

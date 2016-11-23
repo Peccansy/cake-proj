@@ -4,6 +4,7 @@
 html, body {
 	@include font('source_sans_proregular', 11px, normal, 20px);
 	color: $black;
+	height: 100%;
 }
 h1,
 h2,
@@ -29,12 +30,21 @@ ul {
 	max-width: 480px;
 	margin:0 auto;	
 	position: relative;	
+	&::after {
+		content: '';
+		display: block;
+		height: 80px;
+	}
 	&_menu-open {
-		height: 100vh;	
+		//height: 100vh;	
 		.wrapper__inner {			
 			position: relative;
-			transform: translate3d(82%,0,0);			
-		}		
+			transform: translate3d(82%,0,0);
+			max-height: 100vh;			
+		}	
+		.order {
+			transform: translate3d(82%,0,0);
+		}	
 		.header {
 			background-color: $bgBtnOpen;
 		}		
@@ -43,6 +53,14 @@ ul {
 		height: 100vh;
 		.wrapper__inner {
 			transform: translate3d(-100%,0,0);
+		}
+	}
+	&_bg {
+	 	background-color: #F8F8F8;
+	}
+	&_no-footer {
+		&::after {
+			display: none;
 		}
 	}
 }

@@ -1,0 +1,89 @@
+.cart-form {
+	margin-bottom: 0;
+}
+.cart-form__row {	
+	border-bottom:1px solid #E2E2E2;
+	padding: 20px 19px;
+	font-size: 0;
+}
+.cart-form__elem {
+	@include inline-block(top);
+	font-size: 1rem;
+	width: 50%;
+}
+.cart-form__label {
+	display: block;
+	width: 100%;
+	color: $gray;
+	font-size: (14/11)+rem;
+}
+.cart-form__input {
+	border: none;
+	background-color: transparent;
+	color: $black;
+	font-size: (14/11)+rem;	 
+	outline: none;
+	text-align: center;
+	line-height: 20px;
+	width: 100%;
+	&_textarea {
+		resize: none;
+		min-height: 20px;
+		height: 20px;
+		padding: 0;
+	}
+	&_select {
+		appearance: none;	
+		width: auto;			
+		&::-ms-expand {
+			display: none;			
+		}							
+	}
+	&_date {
+		background:transparent url('../assets/img/icons/calendar.svg') center right no-repeat;
+		background-size: 16px;
+		appearance: none;
+		padding-right: 13px;		
+		width: auto;		
+		&::-ms-expand {
+			display: none;			
+		}
+		&::-webkit-calendar-picker-indicator {
+			display: none;	
+		}	
+		&::-webkit-datetime-edit {
+			text-align: right;
+		}	
+	}
+	&_option {
+		background-color: transparent;
+		border: 1px solid #E2E2E2;
+	}
+}
+.cake__input-wrapper {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	text-align: right;	
+	&_select {
+		padding-right: 13px;
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -2px;
+			border: 4px solid transparent;
+			border-top-color: $gray;
+		}	
+	}
+	
+}
+.cart__form-time {
+	font-size: 1rem;
+	color: $gray;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}

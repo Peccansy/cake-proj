@@ -3,7 +3,10 @@
 	background-color: $bgHeader;
 	line-height: 60px;
 	font-size: 0;
-	transition:background-color .4s ease-in;
+	transition: background-color .4s ease-in;
+	&_single {
+		background-color: $bgBtnSearch;
+	}
 }
 .header__left{
 	float: left;
@@ -27,8 +30,20 @@
 }
 .header__btn {
 	@include inline-block(middle);
+	&_back {
+		position: relative;
+	}
 }
 .header__icon {
 	@include inline-block(middle);
 	margin-left: 19px;
+}
+.header__link {
+	@extend .reg-form__link;
+	font-size: 1rem;
+}
+.header__btn_arrow {
+	@extend .section__arrow;
+	left: 0;
+	transform: rotate(180deg);
 }

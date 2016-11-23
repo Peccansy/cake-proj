@@ -1,0 +1,62 @@
+.profile__avatar {
+	border-bottom: 1px solid #E2E2E2;
+	padding-bottom: 19px;
+}
+.profile__left {
+	@extend .bakery__left;
+	text-align: center;
+}
+.profile__avatar-img {
+	@extend .bakery__logo;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+.profile__avatar-pic {
+	display: none;
+}
+.profile__right {
+	@extend .bakery__right;
+	padding-top: 12px;
+}
+.profile__name {
+	@include font('source_sans_prosemibold', (14/11)+rem, 20px, normal);
+	color: $black;
+}
+.profile__uplouad-label {
+	color: $gray;
+	text-decoration: underline;
+	font-size: (14/11)+rem;
+}
+.profile__form-title {
+	@extend .search__item;
+	@extend .search__item_category;
+}
+.profile__form-row {
+	@extend .cart-form__row;
+}
+.profile__form-elem {
+	@extend .cart-form__elem;
+}
+.profile__form-label {
+	@extend .cart-form__label;
+}
+.profile__form-input {
+	@extend .cart-form__input;
+	&_textarea {
+		@extend .cart-form__input_textarea;
+	}
+	&_select {
+		@extend .cart-form__input_select;			
+	}
+	&_block {
+		text-align: left;
+	}
+}
+.profile__form-link {
+	display: block;
+	color: $btnColor;
+	text-align: center;
+	font-size: 1rem;
+	text-decoration: underline;
+}

@@ -1,0 +1,44 @@
+.order {
+	width: 100%;	
+	max-width: 480px;
+	margin: -80px auto 0;
+	position: relative;	
+	overflow: hidden;	
+	&_menu-open {		
+		.order__inner {
+			transform: translate3d(100%,0,0); 
+		}
+	}
+}
+.order__inner {
+	transition: .4s ease-in;
+	transform: translate3d(0,0,0);
+	font-size: 0;
+}
+.order__input {
+	@extend .cake__input;
+	&_submit {
+		background-color: $btnBg;
+		width: 100%;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #fff;
+		height: 40px;			
+		border-radius: 7px;
+		font-family: 'source_sans_prosemibold';
+		line-height: 40px;	
+		font-size: 1rem;		
+	}
+	&_2 {
+		width: calc(50% - 5px);
+		margin-left: 10px;
+	}
+	&_transparent {
+		background-color: transparent;
+		border: 1px solid $btnBg;
+		color: $btnBg;
+	}
+	&:first-child {
+		margin-left: 0;
+	}	
+}

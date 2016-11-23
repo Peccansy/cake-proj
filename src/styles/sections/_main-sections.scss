@@ -7,7 +7,7 @@
 	height: 100%;
 	position: relative;
 	text-decoration: none;
-    color: #221f1f;
+	color: #221f1f;
 }
 .section__arrow {
 	position: absolute;
@@ -24,6 +24,9 @@
 }
 .section__goods {
 	overflow: hidden;
+	&_margin-bottom {
+		margin-bottom: 40px;
+	}
 }
 .section__list {
 	font-size: 0;
@@ -38,7 +41,6 @@
 			width: 0; 
 		}
 	}
-
 }
 .section__item {
 	@include  inline-block(top);
@@ -108,29 +110,58 @@
 	color: $gray;
 }
 .section__item-stats {
+	display: block;
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
 	margin-left: -10px;
+	width: 100%;
 }
 .section__stats-btn {
+	display: inline-block;
+	text-decoration: none;
 	background-color: transparent;
 	border: none;
 	outline: none;
 	padding: 0;
 	&_like {
 		.section__stats-icon {
-			background:transparent url('../assets/img/icons/no_liked.svg') 50% no-repeat;			
+			.outer {
+				fill: $btnBg;
+			}
+			.inner {
+				fill: transparent;
+			}			
 		}
 	}
 	&_liked {
 		.section__stats-icon {
-			background:transparent url('../assets/img/icons/like.svg') 50% no-repeat;			
+			.outer {
+				fill: $btnBg;
+			}
+			.inner {
+				fill: $btnBg;
+			}			
 		}
 	}
 	&_comments {
 		.section__stats-icon {
-			background:transparent url('../assets/img/icons/comments.svg') 50% no-repeat;		
+			.svg__fill {
+				fill: $gray;
+			}		
+		}
+	}
+	&_cart {
+		position: absolute;
+		right: 10px;
+		bottom: 0px;
+		padding: 3px 4px 3px 2px;		
+		border-radius: 4px;	
+		background-color: $btnBg;
+		line-height: 13px;	
+		.section__stats-icon {		
+			fill: #fff;
+			margin-left: 0;
 		}
 	}
 }
@@ -143,6 +174,7 @@
 .section__stats-count {
 	@include inline-block(middle);
 	color: $gray;
+	margin-left: 3px;
 
 }
 
