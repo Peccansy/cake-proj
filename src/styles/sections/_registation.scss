@@ -62,6 +62,8 @@
 		@include font('source_sans_prosemibold', (11/11)+rem, normal, 40px);
 		background-color: $btnBg;
 		color: #fff;
+		text-decoration: none;
+		text-align: center;
 		text-transform: uppercase;		
 		border-color: $btnBg;
 		padding: 0;

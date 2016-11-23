@@ -30,9 +30,11 @@
 }
 .comments__input {
 	@extend .search__input-search;
+	display: inline-block;
 	width: 100%;
+	height: auto;
 	background-image: none;
-	padding: 0 10px;
+	padding: 10px 10px;
 	&_msg {
 		height: 160px;
     	resize: none;
@@ -41,6 +43,8 @@
 	&_btn {
 		border-color: $btnBg;
 		color: $btnBg;
+		text-decoration: none;
+		text-align: center;
 		text-transform: uppercase;
 	}
 }

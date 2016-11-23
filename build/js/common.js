@@ -13,14 +13,17 @@ $(document).ready(function(){
 
 	$('body').on('click', '*[data-target="open-menu"]', function(e){
 
-		e.preventDefault;
+		e.preventDefault();
 		offCanvas($('.wrapper'), 'wrapper_menu-open');
 		offCanvas($('.order'), 'order_menu-open');
 		
 	});
 	$('body').on('click', '*[data-target="open-search"]', function(e){
-		e.preventDefault;
+		e.preventDefault();
 		offCanvas($('.wrapper'), 'wrapper_search-open');
+		$('body').on('submit', '.search__form', function(e){
+			e.preventDefault();
+		})
 		$(".search__input-search").val('');
 	});
 	//DOTDOTDOT INIT

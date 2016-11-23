@@ -116,7 +116,9 @@
 		color: #fff;
 		background-color: $btnBg;
 		border: none;
-		height: 40px;
+		height: auto;
+		padding: 10px 0;
+		text-decoration: none;		
 		border-radius: 7px;
 	}
 	&_left {
@@ -152,8 +154,7 @@
 	max-width: 89%;
 	&_gray {		
 		color: $gray;
-		margin-left: 0;
-		
+		margin-left: 0;		
 	}
 }
 .cake__table {
