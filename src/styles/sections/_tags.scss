@@ -1,0 +1,27 @@
+.tags__inner {
+	overflow: hidden;
+}
+.tags__list {
+	font-size: 0;
+	@extend .section__list_carusel;	
+	margin-bottom: 10px;
+}
+.tags__item {
+	@include inline-block(middle);
+	padding: 3px 10px;
+	margin-left: 10px;
+	font-size: (12/11)+rem;
+	border-radius: 5px;
+	background-color: #F8F8F8;
+	color: gray;	
+	&_active {
+		background-color: $btnBg;
+		color: #fff;
+	}
+	&:first-child {
+		margin-left: 19px;
+	}
+	&:last-child {
+		margin-right: 19px;
+	}
+}

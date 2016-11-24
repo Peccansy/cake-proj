@@ -1,0 +1,41 @@
+.filter__list {
+	padding-right: 0 19px;
+	font-size: 0;
+	margin-bottom: 19px;
+}
+.filter__item {
+	@include inline-block (top);
+	font-size: 1rem;
+	border: 1px solid transparent;
+	border-bottom-color: #E2E2E2;
+	border-right-color: #E2E2E2;
+	width: 100%;
+	&:last-child {
+		border-right-color: transparent;
+	}
+	&_2 {
+		width: 50%;		
+	}
+}
+.filter__item-wrapper {
+	@extend .cake__input-wrapper;
+	&_select {
+		&::after {
+			@extend .cake__input-wrapper_select::after;
+			right: 19px;
+		} 	
+	}		
+}
+.filter__select {
+	font-size: (14/11)+rem;
+	border: none;
+	line-height: 20px;
+	color: $gray;
+	padding: 10px 19px;
+	width: 100%;
+	outline: none;
+	appearance: none;	
+	&::-ms-expand {
+		display: none;			
+	}	
+}

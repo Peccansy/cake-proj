@@ -143,4 +143,18 @@ $(document).ready(function(){
 		starToggle($(this), 'bakery__rating-item');
 	});
 
+
+	//tags 
+
+	var tagClick = function(item) {
+		var itemClass = 'tags__item';
+		if (!item.hasClass(itemClass +'_active')) {
+			item.addClass(itemClass + '_active');
+		} else {
+			item.removeClass(itemClass + '_active');
+		}
+	}
+	$('body').on('click', '.tags__item', function(){
+		tagClick($(this));
+	});
 });
