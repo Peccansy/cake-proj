@@ -1,3 +1,20 @@
+.orders_stocks {
+	.orders__link {
+		padding-top: 0;
+	}
+	.orders__item-elem {
+		width: 65%;
+		padding-top: 20px;
+		&_pic {
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			width: 35%;
+			height: 106px;
+			padding-top: 0;
+		}	
+	}
+}
 .orders__list {
 	margin-bottom: 19px;	
 }
@@ -14,6 +31,7 @@
 	color: inherit;
 	height: 100%;
 	padding-top: 20px;
+	font-size: 0;
 }
 .orders__item-row {
 	padding: 0 10px;
@@ -49,4 +67,7 @@
 	position: absolute;
 	right: 10px;
 	bottom: 0;
+}
+.orders__item-img {
+	display: none;
 }
