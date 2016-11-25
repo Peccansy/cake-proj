@@ -157,4 +157,38 @@ $(document).ready(function(){
 	$('body').on('click', '.tags__item', function(){
 		tagClick($(this));
 	});
+
+	//modals 
+
+	var modalToggle = function(name) {
+		
+		var overlay = $('.modal');
+		var modalItem = $('.modal').find('.modal__inner[data-name="'+name+'"]');
+		if (!overlay.is('.modal_active')) {
+
+			overlay.addClass('modal_active');
+			modalItem.addClass('modal__inner_active');
+			overlay.on('click', function(e){
+				if (!modalItem.is(e.target) && modalItem.has(e.target).length === 0) {
+
+					modalItem.removeClass('modal__inner_active');
+					overlay.removeClass('modal_active');
+					overlay.off('click');
+
+				}
+			});
+
+		} else {
+
+			modalItem.removeClass('modal__inner_active');
+			overlay.removeClass('modal_active');
+
+		}
+
+	} 
+
+	$('body').on('click', '.modal__open, .modal__close', function(e){
+		e.preventDefault();
+		modalToggle($(this).data('target'));
+	})
 });
