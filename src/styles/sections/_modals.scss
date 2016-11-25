@@ -29,6 +29,9 @@
 		display: block;
 		transform: translate(-50%, -50%) scale(1);
 	}
+	&_message {
+		 padding: 35px 10px;
+	}
 }
 .modal__title {
 	@include font ('source_sans_prosemibold', (20/11)+rem, normal, 20px);
@@ -68,4 +71,7 @@
 	position: absolute;
 	@extend .reg-form__element_close;
 	right: 10px;
+}
+.modal__icon {
+	@include inline-block(middle);
 }

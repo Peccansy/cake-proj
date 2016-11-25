@@ -73,6 +73,9 @@
 						<div class="cake__add-row" style="margin: 20px 0;">
 							<a href="#" class="modal__open cake__input cake__input_submit" data-target="modal1">Открыть модальное окно</a>
 						</div>	
+						<div class="cake__add-row" style="margin: 20px 0;">
+							<a href="#" class="modal__open cake__input cake__input_submit" data-target="modal2">Открыть модальное окно 2</a>
+						</div>	
 					</div>
 				</section>
 			</div>
@@ -104,8 +107,8 @@
 			</aside>
 			<!-- END SEARCH -->
 		</div>
-		<div class="modal modal_active">
-			<div class="modal__inner modal__inner_active" data-name="modal1">
+		<div class="modal">
+			<div class="modal__inner" data-name="modal1">
 				<div class="modal__close" data-target="modal1"></div>
 				<div class="modal__title">Какой-то заголовок</div>
 				<div class="modal__text-block">
@@ -117,6 +120,15 @@
 				<a href="#" class="modal__btn modal__btn_2 modal__btn_white">
 					Кнопка
 				</a>
+			</div>
+			<div class="modal__inner modal__inner_message" data-name="modal2">
+				<div class="modal__close" data-target="modal2"></div>
+				<div class="modal__title">Заказ отправлен</div>
+				<div class="modal__text-block">
+					Представитель пекарни очень скоро свяжется с вами. Спасибо, что используете Get Cake!
+				</div>	
+				<div class="modal__icon ic-fly ic-fly-dims">					
+				</div>			
 			</div>
 		</div>	
 	</div>
