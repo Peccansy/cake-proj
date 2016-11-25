@@ -3,6 +3,7 @@
 	position: absolute;	
 	z-index: 1000;
 	opacity: 0;
+	top: 100%;
 	transition: opacity .4s ease-in-out;
 	&_active {
 		left: 0;
@@ -13,21 +14,22 @@
 	}
 }
 .modal__inner {
-	display: none;
+	display: block;	
 	width: 80%;
 	background-color: #fff;
 	padding: 35px 10px 10px;
 	border: 2px solid #E5E5E5;
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	top: -9999999px;
+	left: -9999999px;
 	transform: translate(-50%, -50%) scale(0);
 	text-align: center;
 	font-size: 0;	
-	transition: .4s ease-in-out;
-	&_active {
-		display: block;
+	transition: transform .4s ease-in-out;
+	&_active {		
 		transform: translate(-50%, -50%) scale(1);
+		top: 50%;
+		left: 50%;
 	}
 	&_message {
 		 padding: 35px 10px;
@@ -45,16 +47,10 @@
 }
 .modal__btn {
 	@include inline-block(middle);
-	padding: 10px 15px;
-	width: 100%;
-	@include font ('source_sans_prosemibold', (11/11)+rem, normal, 20px);
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #fff;
-	background-color: $btnBg;
-	border: 1px solid $btnBg;
-	border-radius: 7px;
-	text-align: center;
+	@extend .order__input;
+	@extend .order__input_submit;
+	cursor: pointer;	
+	margin-left: 0;	
 	&_2 {
 		width: calc(50% - 10px);
 		margin-left: 10px;
@@ -63,15 +59,24 @@
 		}
 	}
 	&_white {
-		background-color: transparent;
-		color: $btnBg;
+		@extend .order__input_transparent;
 	}
 }
-.modal__close {
+.modal__close_box {
 	position: absolute;
-	@extend .reg-form__element_close;
 	right: 10px;
+	top: 6%;
+	width: 24px;
+	height: 24px;
+	text-align: center;
+}
+.modal__close_icon {	
+	@extend .reg-form__element_close;
+	top: inherit;
+	right: inherit;
+	@include inline-block(middle);
 }
 .modal__icon {
 	@include inline-block(middle);
+	cursor: pointer;
 }

@@ -179,7 +179,7 @@ $(document).ready(function(){
 			});
 
 		} else {
-
+			
 			modalItem.removeClass('modal__inner_active');
 			overlay.removeClass('modal_active');
 
