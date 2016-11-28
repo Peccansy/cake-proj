@@ -4,7 +4,7 @@
 	}
 	.orders__item-elem {
 		width: 65%;
-		padding-top: 20px;
+		padding-top: 15px;
 		&_pic {
 			background-position: center;
 			background-size: cover;
@@ -24,6 +24,7 @@
 	margin-bottom: 10px;
 	border: 1px solid #E5E5E5;
 	position: relative;
+	max-height: 108px;
 }
 .orders__link {
 	display: block;
@@ -51,12 +52,20 @@
 	}		
 }
 .orders__date {
-	@include font('source_sans_prosemibold', (14/11)+rem, 20px, normal);
+	@include font('source_sans_prosemibold', (14/11)+rem, normal, 20px);
 	color: $black;
 }
 .orders__bakery {
 	font-size: 1rem;
 	color: $gray;
+	margin-bottom: 5px;
+}
+.orders__city {
+	color: $black;
+	&_separator::after {
+		content: ' | ';
+		color: $black;
+	}
 }
 .orders__icon {
 	display: inline-block;
@@ -67,6 +76,11 @@
 	position: absolute;
 	right: 10px;
 	bottom: 0;
+	&_like {
+		background: none;
+		width: auto;
+		bottom: 5px;
+	}
 }
 .orders__item-img {
 	display: none;
