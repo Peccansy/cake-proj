@@ -19,7 +19,6 @@ $(document).ready(function(){
 		}
 	}
 	$('body').on('click', '*[data-target="open-menu"]', function(e){
-
 		e.preventDefault();
 		offCanvas($('.wrapper'), 'wrapper_menu-open');
 		offCanvas($('.order'), 'order_menu-open');
@@ -35,9 +34,29 @@ $(document).ready(function(){
 	});
 	//DOTDOTDOT INIT
 	$(".section__item-title").dotdotdot({
-		ellipsis	: '... ',
+		ellipsis: '... ',
 		height: 40
 	});
+	$(".orders__date").dotdotdot({
+		ellipsis: '... ',
+		height: 40		
+	});	
+	
+	$(".orders__bakery_tags").dotdotdot({
+		ellipsis: '... ',
+		height: 40,		
+		callback: function(isTruncated) { 
+			if($(this).siblings('.orders__date').height() === 40) {
+
+			$(this).dotdotdot({
+				ellipsis: '... ',
+				height: 20
+			});
+
+		}
+	}
+});
+
 
 	//like 
 	var likeClick = function(item, itemClass) {
