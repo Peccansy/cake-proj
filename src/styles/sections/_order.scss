@@ -1,14 +1,9 @@
 .order {
-	width: 100%;	
-	max-width: 480px;
-	margin: -80px auto 0;
-	position: relative;	
+	width: 100%;		
+	position: absolute;	
 	overflow: hidden;	
-	&_menu-open {		
-		.order__inner {
-			transform: translate3d(100%,0,0); 
-		}
-	}
+	bottom: 40px;
+	left: 0;	
 }
 .order__inner {
 	transition: .4s ease-in;

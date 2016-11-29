@@ -35,16 +35,12 @@ ul {
 		display: block;
 		height: 80px;
 	}
-	&_menu-open {
-		//height: 100vh;	
+	&_menu-open {			
 		.wrapper__inner {			
 			position: relative;
 			transform: translate3d(82%,0,0);
 			max-height: 100vh;			
-		}	
-		.order {
-			transform: translate3d(82%,0,0);
-		}	
+		}		
 		.header {
 			background-color: $bgBtnOpen;
 		}		
