@@ -1,6 +1,6 @@
 .modal {	
 	background-color: rgba(0,0,0,.5);
-	position: absolute;	
+	position: fixed;	
 	z-index: 1000;
 	opacity: 0;
 	top: 100%;
@@ -69,6 +69,7 @@
 	width: 24px;
 	height: 24px;
 	text-align: center;
+	cursor: pointer;
 }
 .modal__close_icon {	
 	@extend .reg-form__element_close;

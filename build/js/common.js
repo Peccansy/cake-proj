@@ -48,14 +48,14 @@ $(document).ready(function(){
 		callback: function(isTruncated) { 
 			if($(this).siblings('.orders__date').height() === 40) {
 
-			$(this).dotdotdot({
-				ellipsis: '... ',
-				height: 20
-			});
+				$(this).dotdotdot({
+					ellipsis: '... ',
+					height: 20
+				});
 
+			}
 		}
-	}
-});
+	});
 
 
 	//like 
@@ -179,12 +179,19 @@ $(document).ready(function(){
 
 	//modals 
 
+	var offScroll = function () {
+		$(window).on({
+			wheel: function (e) {e.preventDefault()},
+			touchmove: function (e) {e.preventDefault()}
+		});
+	}
+
 	var modalToggle = function(name) {
 		
 		var overlay = $('.modal');
 		var modalItem = $('.modal').find('.modal__inner[data-name="'+name+'"]');
 		if (!overlay.is('.modal_active')) {
-
+			offScroll();
 			overlay.addClass('modal_active');
 			modalItem.addClass('modal__inner_active');
 			overlay.on('click', function(e){
@@ -193,6 +200,8 @@ $(document).ready(function(){
 					modalItem.removeClass('modal__inner_active');
 					overlay.removeClass('modal_active');
 					overlay.off('click');
+					$(window).off('touchmove');
+					$(window).off('wheel');
 
 				}
 			});
@@ -201,6 +210,8 @@ $(document).ready(function(){
 			
 			modalItem.removeClass('modal__inner_active');
 			overlay.removeClass('modal_active');
+			$(window).off('touchmove');
+			$(window).off('wheel');
 
 		}
 
