@@ -5,6 +5,7 @@
 }
 .filter__item {
 	@include inline-block (top);
+	background-color: #fff;
 	font-size: 1rem;
 	border: 1px solid transparent;
 	border-bottom-color: #E2E2E2;
@@ -40,5 +41,11 @@
 	appearance: none;	
 	&::-ms-expand {
 		display: none;			
-	}	
+	}
+	&_title {
+		font-family: 'source_sans_prosemibold';		
+		color: $black;
+		text-align: left;
+		margin-bottom: 0;
+	}
 }

@@ -50,12 +50,12 @@
 	@extend .order__input;
 	@extend .order__input_submit;
 	cursor: pointer;	
-	margin-left: 0;	
+	margin-right: 0;	
 	&_2 {
 		width: calc(50% - 10px);
-		margin-left: 10px;
-		&:first-child {
-			margin-left: 0;
+		margin-right: 10px;
+		&:last-child {
+			margin-right: 0;
 		}
 	}
 	&_white {
