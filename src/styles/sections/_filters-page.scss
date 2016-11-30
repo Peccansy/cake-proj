@@ -1,5 +1,8 @@
 .filters {
 	min-height: 100vh;
+	height: 100%;
+	position: relative;
+	margin-bottom: 0;
 	&::after {
 		content: '';
 		display: block;
@@ -66,8 +69,10 @@
 .filters__buttons {
 	position: absolute;
 	bottom: 30px;
+	left: 0;
 	width: 100%;
 	text-align: center;
+	overflow: hidden;
 }
 .filters__btn {
 	@extend .modal__btn;
