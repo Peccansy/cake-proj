@@ -1,8 +1,8 @@
 .filters {
-	min-height: 100vh;
+	min-height: calc(100vh - 60px);
 	height: 100%;
-	position: relative;
 	margin-bottom: 0;
+	position: relative;
 	&::after {
 		content: '';
 		display: block;
@@ -67,6 +67,7 @@
 	}
 }
 .filters__buttons {
+	overflow: hidden;
 	position: absolute;
 	bottom: 30px;
 	left: 0;
