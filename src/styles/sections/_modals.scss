@@ -49,14 +49,14 @@
 	@include inline-block(middle);
 	@extend .order__input;
 	@extend .order__input_submit;
-	cursor: pointer;
+	cursor: pointer;	
 	margin-right: 0;	
 	&_2 {
 		width: calc(50% - 10px);
-		margin-right: 10px;			
+		margin-right: 10px;
 		&:last-child {
 			margin-right: 0;
-		}	
+		}
 	}
 	&_white {
 		@extend .order__input_transparent;
