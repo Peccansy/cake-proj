@@ -40,5 +40,9 @@
 	appearance: none;	
 	&::-ms-expand {
 		display: none;			
-	}	
+	}
+	&_title {
+		color: $black;
+		text-align: left;
+	}
 }
