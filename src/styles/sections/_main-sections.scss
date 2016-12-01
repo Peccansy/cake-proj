@@ -168,8 +168,11 @@
 .section__stats-icon {
 	@include inline-block(middle);
 	width: 12px;
-	height: 12px;
-	margin-left: 10px;	
+	height: 20px;
+	margin-left: 10px;
+	svg {
+		@include inline-block(middle);
+	}	
 }
 .section__stats-count {
 	@include inline-block(middle);

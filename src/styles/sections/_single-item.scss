@@ -82,7 +82,7 @@
 }
 .cake__item-count {
 	@include inline-block(middle);
-	width: 50%;
+	width: 35%;
 	font-size: 0;
 	text-align: right;
 }
@@ -96,7 +96,7 @@
 .cake__price {
 	@include inline-block(middle);
 	@include font('source_sans_prosemibold', (26/11)+rem, normal, 20px);
-	width: 50%;	
+	width: 65%;	
 }
 .cake__add-row {
 	margin-bottom: 20px;
