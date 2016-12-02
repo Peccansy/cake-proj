@@ -60,3 +60,7 @@
 	font-size: 1rem;
 	text-decoration: underline;
 }
+.profile__select-wrapper {
+	@extend .cake__input-wrapper;
+	@extend .cake__input-wrapper_select;
+}
