@@ -13,9 +13,17 @@
 	.wrapper {
 		max-width: 100%;
 	}
+	.container {
+		width: 640px;
+		margin: 0 auto;
+	}
 	.header {
 		height: 80px;
 		line-height: 80px;
+		padding: 0 19px;
+		.container {			
+			width: 100%;
+		}
 	}
 	.header__center {
 		width: 43.5%;
@@ -50,10 +58,27 @@
 			.section__item-img {
 				height: 200px;
 				margin-bottom: 15px;
-		   }
+		   }		  
 		}
 	}
 	.section__item-img {
 		height: 174px;
+	}
+	.cake__form-tag {
+		max-width: 480px;
+		margin: 0 auto;
+	}
+	.cake__input_submit {
+		padding: 20px 0;
+	}
+	.cake__table {
+		max-width: 640px;
+		margin: 0 auto 30px;
+	}
+	.cake__tcell {
+		padding: 25px 19px;
+	}
+	.comments__input {
+		padding: 20px;
 	}
 }
