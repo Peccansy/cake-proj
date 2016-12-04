@@ -62,7 +62,10 @@
 						<div class="header__center">
 							<h1>Пекарни</h1>
 						</div>
-						<div class="header__right">                    
+						<div class="header__right">
+							<div class="header__icon header__icon_cart">
+								<a href="cart-1.html" class="header__btn ic-cart ic-cart-dims"></a>
+							</div>                    
 							<div class="header__icon">
 								<a href="profile.html" class="header__btn ic-profile ic-profile-dims"></a>
 							</div>                    
@@ -70,6 +73,27 @@
 								<a href="#" class="header__btn ic-search ic-search-dims" data-target="open-search"></a>
 							</div>
 						</div>
+					</div>
+					<div class="menu menu_full">
+						<nav class="nav">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a href="index.html" class="nav__link"><i class="nav__link-icon ic-home ic-home-dims"></i><span class="nav__link-text">Главная</span></a>
+								</li>
+								<li class="nav__item nav__item_active">
+									<a href="bakeries.html" class="nav__link"><i class="nav__link-icon ic-bakery ic-bakery-dims"></i><span class="nav__link-text">Пекарни</span></a>
+								</li>
+								<li class="nav__item">
+									<a href="goods.html" class="nav__link"><i class="nav__link-icon ic-bag ic-bag-dims"></i><span class="nav__link-text">Товары</span></a>
+								</li>
+								<li class="nav__item">
+									<a href="stocks.html" class="nav__link"><i class="nav__link-icon ic-sale ic-sale-dims"></i><span class="nav__link-text">Акции</span></a>
+								</li>
+								<li class="nav__item">
+									<a href="" class="nav__link"><i class="nav__link-icon ic-fav ic-fav-dims"></i><span class="nav__link-text">Избранное</span></a>
+								</li>
+							</ul>
+						</nav>
 					</div>
 				</header>
 				<!-- END HEADER -->
@@ -225,23 +249,51 @@
 				<div class="search__header">
 					<div class="container">
 						<form action="#" class="search__form">
-							<input type="search" name="inputsearch" class="search__input-search" placeholder="Поиск...">			
+							<input type="search" class="search__input-search" placeholder="Поиск...">					
 							<a href="#" class="search__cancel-btn" data-target="open-search">Отмена</a>
 						</form>
 					</div>
 				</div>
 				<div class="search__result">
 					<ul class="search__list">
-						<li class="search__item search__item_category">Пекарни</li>
-						<li class="search__item">Осетинские пироги</li>
-						<li class="search__item">Пироги как дома</li>
+						<li class="search__item search__item_category">
+							<div class="container">Пекарни</div>
+						</li>
+						<li class="search__item">
+							<div class="container">
+								<a href="bakery.html" class="search__item-link">Осетинские пироги</a>
+							</div>
+						</li>
+						<li class="search__item">
+							<div class="container">
+								<a href="bakery.html" class="search__item-link">Пироги как дома</a>
+							</div>
+						</li>
 					</ul>
 					<ul class="search__list">
-						<li class="search__item search__item_category">Товары</li>
-						<li class="search__item">Пирог с черникой</li>
-						<li class="search__item">Пирог со шпинатом и сыром</li>
-						<li class="search__item">Куриный пирог</li>
-						<li class="search__item">Пирог с сердцем</li>
+						<li class="search__item search__item_category">
+							<div class="container">Товары</div>
+						</li>
+						<li class="search__item">
+							<div class="container">				
+								<a href="single-item.html" class="search__item-link">Пирог с черникой</a>
+							</div>
+						</li>
+						<li class="search__item">
+							<div class="container">
+								<a href="single-item.html" class="search__item-link">Пирог со шпинатом и сыром</a>
+							</div>
+						</li>
+						<li class="search__item">
+							<div class="container">
+								<a href="single-item.html" class="search__item-link">Куриный пирог</a>
+							</div>
+						</li>
+						<li class="search__item">
+							<div class="container">
+								<a href="single-item.html" class="search__item-link">Пирог с сердцем</a>
+							</div>
+						</li>
 					</ul>
 				</div>				
 			</aside>

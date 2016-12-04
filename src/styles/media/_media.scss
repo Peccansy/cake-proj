@@ -1,0 +1,259 @@
+@include for-phone-only {
+	.wrapper {
+		max-width: 100%;
+	}
+	.header__center {
+		width: 44.5%;
+		& .header__btn_back {
+			display: none;
+		}
+	}
+	.profile__form-row, .cart__form-row {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.menu_full {
+		display: none;
+	}
+	.header__icon_cart {
+		display: none;
+	}
+	.header__cart-indicator {
+		bottom: 5px;
+	}	
+}
+@include for-tablet-portrait-up {
+	html,body {
+		font-size: 14px;
+	}
+	.wrapper {
+		max-width: 1024px;
+	}
+	.container {
+		width: 95%;
+		max-width: 640px;
+		margin: 0 auto;
+	}
+	.header {
+		height: auto;
+		line-height: 20px;
+		padding: 0 19px 10px;
+		.header__left {
+			max-height: 60px;
+			display: none;
+			margin-top: 15px;
+		}
+		.header__right {
+			display: block;
+		}
+		.header__center {			
+			line-height: 20px;
+			width: auto;
+			margin-top: 15px;
+			position: relative;
+			&_back {
+				padding-left: 25px;
+			}			
+		}
+		.container {			
+			width: 100%;
+			max-width: 100%;
+		}
+		.header__btn_back {
+			position: absolute;
+			right: 100%;
+			top: 50%;
+		}		
+	}	
+	.menu {
+		display: none;
+		&_full {
+			display: block;
+			position: static;
+			background-color: transparent;
+			height: auto;
+			width: 100%;
+			.nav__list {
+				font-size: 0;
+				text-align: center;
+				margin-left: -15px;
+			}
+			.nav__item {
+				@include inline-block(middle);
+				font-size: 1rem;
+				height: 60px;
+				border: none;
+				padding-left: 0;
+				margin-left: 15px;
+				position: relative;
+				&::before {
+					content: '';
+					display: block;
+					height: 3px;
+					position: absolute;
+					bottom: 0;
+					margin-top: 2px;
+					left: 50%;
+					right: 50%;
+					background-color: $btnBg;
+					transition: .3s;
+					border-radius: 5px;
+				}		
+				&:hover::before {
+					left: 0;
+					right: 0;
+				}
+				&_active::before {
+					left: 0;
+					right: 0;
+				}
+			}			
+			.nav__link {
+				line-height: 60px;
+				padding-left: 0px;				
+			}
+			.nav__link-text {
+				font-size: (14/11)+rem;
+			}
+		}
+	}
+	.categories__item {
+		height: 120px;
+	}
+	.categories__link {
+		padding: 30px;
+	}
+	.promo__inner {
+		height: 220px;
+	}	
+	.section__stats-icon {
+		width: 18px;
+	}
+	.section__list {
+		margin-left: -20px;
+		&_carusel {
+			margin-left: 0;
+		}
+	}
+	.section__item {
+		width: calc(100%/3 - 20px);
+		height: 300px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		&_carusel {
+			width: 200px;
+			height: auto;
+			.section__item-img {
+				height: 200px;
+				margin-bottom: 15px;
+			}
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	.section__item-img {
+		height: 174px;
+	}	
+	.cake__form-tag {
+		max-width: 480px;
+		margin: 0 auto;
+	}
+	.cake__input_submit {
+		padding: 20px 0;
+	}
+	.cake__table {
+		max-width: 640px;
+		margin: 0 auto 30px;
+	}
+	.cake__tcell {
+		padding: 25px 19px;
+	}
+	.comments__input {
+		padding: 20px;
+	}
+	.slider__item {
+		min-height: 220px;
+	}
+	.slider__item-buttons {
+		right: 10px;
+		left: inherit;
+	}
+	.slider__icon {
+		width: 22px;
+	}
+	.slider__item-count {
+		font-size: (14/11)+rem;
+	}
+	.owl-prev, .owl-next {		
+		height: 30px;
+		background-size: cover;
+	}
+	.bakery__bakeshop {
+		padding: 30px 0;
+	}
+	.tabs__link-item {
+		max-height: 100%;
+		padding: 20px 0;
+		max-height: 60px;
+	}
+	.info-block__text {
+		padding: 35px;
+	}
+	.bakery__footer-item {
+		width: 3em;
+		height: 3em;
+	}
+	.bakery__footer-link {
+		width: 22px;
+		height: 3em;
+	}
+	.cart {
+		min-height: calc(100vh - 113px);
+		.container {
+			position: relative;
+			width: 480px;
+		}
+	}
+	.cart-form {
+		min-height: calc(100vh - 53px);
+	}
+	.cart__input {
+		width: 30px;
+		height: 30px;
+		&_left,&_right {
+			background-size: 20px;
+		}		
+		&_code {
+			width: 45%;
+		}
+	}
+	.filter__item {
+		border-width: 2px;
+		border-left: none;
+		text-align: center;
+		&_2 .filter__select {
+			padding: 22px 19px;
+		}
+	} 	
+	.filter__select {
+		padding: 22px 0;		
+	}
+	.orders__list {
+		width: 70%;
+		margin: 0 auto 19px;
+	}
+	.filters {
+		min-height: calc(100vh - 181px);
+	}
+	.reg-form__inner {
+		max-width: 480px;
+	}
+	.profile__form-link {
+		text-align: right;
+	}
+
+}

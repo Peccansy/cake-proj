@@ -6,7 +6,7 @@
 	transition: background-color .4s ease-in;
 	&_single {
 		background-color: $bgBtnSearch;
-	}
+	}	
 }
 .header__left{
 	float: left;
@@ -37,6 +37,26 @@
 .header__icon {
 	@include inline-block(middle);
 	margin-left: 19px;
+	position: relative;
+}
+.header__cart-indicator {
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -10px;
+	right: -10px;
+	background-color: $bgMenu;
+}
+.header__cart-count {
+	@include inline-block(middle);
+	font-size: 1rem;
+	color: $btnColor;  
+    line-height: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
 }
 .header__link {
 	@extend .reg-form__link;

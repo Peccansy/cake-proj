@@ -20,6 +20,7 @@
 }
 .filter__item-wrapper {
 	@extend .cake__input-wrapper;
+	background-color: transparent;
 	&_select {
 		&::after {
 			@extend .cake__input-wrapper_select::after;
@@ -38,7 +39,8 @@
 	padding: 10px 19px;
 	width: 100%;
 	outline: none;
-	appearance: none;	
+	appearance: none;
+	background-color: transparent;	
 	&::-ms-expand {
 		display: none;			
 	}

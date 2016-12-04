@@ -57,7 +57,10 @@
 						<div class="header__center">
 							<h1>DELICE</h1>
 						</div>
-						<div class="header__right">                    
+						<div class="header__right">
+							<div class="header__icon header__icon_cart">
+								<a href="cart-1.html" class="header__btn ic-cart ic-cart-dims"></a>
+							</div>                    
 							<div class="header__icon">
 								<a href="profile.html" class="header__btn ic-profile ic-profile-dims"></a>
 							</div>                    
@@ -66,12 +69,33 @@
 							</div>
 						</div>
 					</div>
+					<div class="menu menu_full">
+						<nav class="nav">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a href="index.html" class="nav__link"><i class="nav__link-icon ic-home ic-home-dims"></i><span class="nav__link-text">Главная</span></a>
+								</li>
+								<li class="nav__item">
+									<a href="bakeries.html" class="nav__link"><i class="nav__link-icon ic-bakery ic-bakery-dims"></i><span class="nav__link-text">Пекарни</span></a>
+								</li>
+								<li class="nav__item">
+									<a href="goods.html" class="nav__link"><i class="nav__link-icon ic-bag ic-bag-dims"></i><span class="nav__link-text">Товары</span></a>
+								</li>
+								<li class="nav__item">
+									<a href="stocks.html" class="nav__link"><i class="nav__link-icon ic-sale ic-sale-dims"></i><span class="nav__link-text">Акции</span></a>
+								</li>
+								<li class="nav__item">
+									<a href="" class="nav__link"><i class="nav__link-icon ic-fav ic-fav-dims"></i><span class="nav__link-text">Избранное</span></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
 				</header>
 				<!-- END HEADER -->
 				<!-- SECTION -->
-				<section class="section single-item cake__img">
+				<section class="section single-item">
 					<div class="cake">
-						<div class="slider slider_cake">
+						<div class="slider slider_cake cake__img">
 							<div class="slider__wrap owl-carousel">
 								<div class="slider__item cake__img" style="background-image: url(assets/img/content/big_cake.jpg);">
 									<img class=" cake__pic" src="../assets/img/content/item7.jpg" alt="Cake">									
@@ -281,23 +305,51 @@
 					<div class="search__header">
 						<div class="container">
 							<form action="#" class="search__form">
-								<input type="search" name="inputsearch" class="search__input-search" placeholder="Поиск...">							
+								<input type="search" class="search__input-search" placeholder="Поиск...">					
 								<a href="#" class="search__cancel-btn" data-target="open-search">Отмена</a>
 							</form>
 						</div>
 					</div>
 					<div class="search__result">
 						<ul class="search__list">
-							<li class="search__item search__item_category">Пекарни</li>
-							<li class="search__item"><a href="#" class="search__item-link">Осетинские пироги</a></li>
-							<li class="search__item"><a href="#" class="search__item-link">Пироги как дома</a></li>
+							<li class="search__item search__item_category">
+								<div class="container">Пекарни</div>
+							</li>
+							<li class="search__item">
+								<div class="container">
+									<a href="bakery.html" class="search__item-link">Осетинские пироги</a>
+								</div>
+							</li>
+							<li class="search__item">
+								<div class="container">
+									<a href="bakery.html" class="search__item-link">Пироги как дома</a>
+								</div>
+							</li>
 						</ul>
 						<ul class="search__list">
-							<li class="search__item search__item_category">Товары</li>
-							<li class="search__item"><a href="single-item.html" class="search__item-link">Пирог с черникой</a></li>
-							<li class="search__item"><a href="single-item.html" class="search__item-link">Пирог со шпинатом и сыром</a></li>
-							<li class="search__item"><a href="single-item.html" class="search__item-link">Куриный пирог</a></li>
-							<li class="search__item"><a href="single-item.html" class="search__item-link">Пирог с сердцем</a></li>
+							<li class="search__item search__item_category">
+								<div class="container">Товары</div>
+							</li>
+							<li class="search__item">
+								<div class="container">				
+									<a href="single-item.html" class="search__item-link">Пирог с черникой</a>
+								</div>
+							</li>
+							<li class="search__item">
+								<div class="container">
+									<a href="single-item.html" class="search__item-link">Пирог со шпинатом и сыром</a>
+								</div>
+							</li>
+							<li class="search__item">
+								<div class="container">
+									<a href="single-item.html" class="search__item-link">Куриный пирог</a>
+								</div>
+							</li>
+							<li class="search__item">
+								<div class="container">
+									<a href="single-item.html" class="search__item-link">Пирог с сердцем</a>
+								</div>
+							</li>
 						</ul>
 					</div>				
 				</aside>
