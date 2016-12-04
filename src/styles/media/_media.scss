@@ -17,6 +17,9 @@
 	}
 	.header__icon_cart {
 		display: none;
+	}
+	.header__cart-indicator {
+		bottom: 5px;
 	}	
 }
 @include for-tablet-portrait-up {
@@ -60,7 +63,7 @@
 			position: absolute;
 			right: 100%;
 			top: 50%;
-		}
+		}		
 	}	
 	.menu {
 		display: none;
