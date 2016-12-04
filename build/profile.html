@@ -69,7 +69,7 @@
 				</header>
 				<!-- END HEADER -->
 				<!-- SECTION -->
-				<section class="profile">									
+				<section class="section profile">									
 					<div class="tabs">
 						<div class="tabs__link">
 							<ul class="tabs__link-list">
@@ -107,71 +107,85 @@
 								</div>
 								<div class="profile__form">
 									<div class="profile__form-title">
-										Личная информация
+										<div class="container">Личная информация</div>
 									</div>
 									<div class="profile__form-tag">
 										<div class="profile__form-row">
-											<div class="profile__form-elem">
-												<label class="profile__form-label" for="name">Имя</label>
-											</div>
-											<div class="profile__form-elem">
-												<input type="text" class="profile__form-input" id="name" name="name">
-											</div>
-										</div>
-										<div class="profile__form-row">
-											<div class="profile__form-elem">
-												<label class="profile__form-label" for="tel">Телефон</label>
-											</div>
-											<div class="profile__form-elem">
-												<input type="tel" class="profile__form-input" id="tel" name="tel">
-											</div>
-										</div>
-										<div class="profile__form-row">
-											<div class="profile__form-elem">
-												<label class="profile__form-label" for="adress">Адрес доставки</label>
-											</div>
-											<div class="profile__form-elem">
-												<textarea rows="1" name="adress" id="adress" class="profile__form-input profile__form-input_textarea"></textarea>
-											</div>
-										</div>
-										<div class="profile__form-row">
-											<div class="profile__form-elem">
-												<label class="profile__form-label" for="under">Станция метро</label>
-											</div>
-											<div class="profile__form-elem">
-												<div class="profile__select-wrapper">
-													<select class="profile__form-input profile__form-input_select" name="underground" id="under">
-														<option class="profile__form-input_option" value="1">
-															Автозаводская
-														</option>
-														<option class="profile__form-input_option" value="2">
-															Царицыно
-														</option>
-														<option class="profile__form-input_option" value="3">
-															Курская
-														</option>
-													</select>
+											<div class="container">
+												<div class="profile__form-elem">
+													<label class="profile__form-label" for="name">Имя</label>
 												</div>
-											</div>								
+												<div class="profile__form-elem">
+													<input type="text" class="profile__form-input" id="name" name="name">
+												</div>
+											</div>
+										</div>
+										<div class="profile__form-row">
+											<div class="container">
+												<div class="profile__form-elem">
+													<label class="profile__form-label" for="tel">Телефон</label>
+												</div>
+												<div class="profile__form-elem">
+													<input type="tel" class="profile__form-input" id="tel" name="tel">
+												</div>
+											</div>
+										</div>
+										<div class="profile__form-row">
+											<div class="container">
+												<div class="profile__form-elem">
+													<label class="profile__form-label" for="adress">Адрес доставки</label>
+												</div>
+												<div class="profile__form-elem">
+													<textarea rows="1" name="adress" id="adress" class="profile__form-input profile__form-input_textarea"></textarea>
+												</div>
+											</div>
+										</div>
+										<div class="profile__form-row">
+											<div class="container">
+												<div class="profile__form-elem">
+													<label class="profile__form-label" for="under">Станция метро</label>
+												</div>
+												<div class="profile__form-elem">
+													<div class="profile__select-wrapper">
+														<select class="profile__form-input profile__form-input_select" name="underground" id="under">
+															<option class="profile__form-input_option" value="1">
+																Автозаводская
+															</option>
+															<option class="profile__form-input_option" value="2">
+																Царицыно
+															</option>
+															<option class="profile__form-input_option" value="3">
+																Курская
+															</option>
+														</select>
+													</div>
+												</div>
+											</div>
 										</div>	
 									</div>
 									<div class="profile__form-title">
-										email и пароль
+										<div class="container">
+											email и пароль
+										</div>
 									</div>
 									<div class="profile__form-row">
-										<div class="profile__form-elem">
-											<div class="profile__form-input profile__form-input_block">vladimir@gmail.com</div>
-										</div>
-										<div class="profile__form-elem">
-											<a href="#" data-name="modal-trigger" class="profile__form-link">Изменить</a>
+										<div class="container">
+											<div class="profile__form-elem">
+												<div class="profile__form-input profile__form-input_block">vladimir@gmail.com</div>
+											</div>
+											<div class="profile__form-elem">
+												<a href="#" data-name="modal-trigger" class="profile__form-link">Изменить</a>
+											</div>
 										</div>
 									</div>	
 									<div class="profile__form-row">
-										<div class="profile__form-elem">
-											<div class="profile__form-input profile__form-input_block">Пароль</div>
-										</div>
-										<div class="profile__form-elem">
-											<a href="#" data-name="modal-trigger" class="profile__form-link">Изменить</a>
+										<div class="container">
+											<div class="profile__form-elem">
+												<div class="profile__form-input profile__form-input_block">Пароль</div>
+											</div>
+											<div class="profile__form-elem">
+												<a href="#" data-name="modal-trigger" class="profile__form-link">Изменить</a>
+											</div>
 										</div>
 									</div>	
 								</div>
@@ -239,43 +253,69 @@
 										</div>
 									</div>
 								</div>								
-							</div>					
-						</secion>
-						<!-- END SECTION -->
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- END SECTION -->		
+			</div>
+			<!-- END CONTENT -->
+			<!-- SEARCH -->
+			<aside class="aside search">				        
+				<div class="search__header">
+					<div class="container">
+						<form action="#" class="search__form">
+							<input type="search" class="search__input-search" placeholder="Поиск...">					
+							<a href="#" class="search__cancel-btn" data-target="open-search">Отмена</a>
+						</form>
 					</div>
 				</div>
-			</section>
-			<!-- END SECTION -->
-		</div>
-		<!-- END CONTENT -->
-		<!-- SEARCH -->
-		<aside class="aside search">				        
-			<div class="search__header">
-				<div class="container">
-					<form action="#" class="search__form">
-						<input type="search" name="inputsearch" class="search__input-search" placeholder="Поиск...">						
-						<a href="#" class="search__cancel-btn" data-target="open-search">Отмена</a>
-					</form>
-				</div>
-			</div>
-			<div class="search__result">
-				<ul class="search__list">
-					<li class="search__item search__item_category">Пекарни</li>
-					<li class="search__item"><a href="#" class="search__item-link">Осетинские пироги</a></li>
-					<li class="search__item"><a href="#" class="search__item-link">Пироги как дома</a></li>
-				</ul>
-				<ul class="search__list">
-					<li class="search__item search__item_category">Товары</li>
-					<li class="search__item"><a href="single-item.html" class="search__item-link">Пирог с черникой</a></li>
-					<li class="search__item"><a href="single-item.html" class="search__item-link">Пирог со шпинатом и сыром</a></li>
-					<li class="search__item"><a href="single-item.html" class="search__item-link">Куриный пирог</a></li>
-					<li class="search__item"><a href="single-item.html" class="search__item-link">Пирог с сердцем</a></li>
-				</ul>
-			</div>				
-		</aside>
-		<!-- END SEARCH -->
-	</div>		
-</div>
+				<div class="search__result">
+					<ul class="search__list">
+						<li class="search__item search__item_category">
+							<div class="container">Пекарни</div>
+						</li>
+						<li class="search__item">
+							<div class="container">
+								<a href="bakery.html" class="search__item-link">Осетинские пироги</a>
+							</div>
+						</li>
+						<li class="search__item">
+							<div class="container">
+								<a href="bakery.html" class="search__item-link">Пироги как дома</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="search__list">
+						<li class="search__item search__item_category">
+							<div class="container">Товары</div>
+						</li>
+						<li class="search__item">
+							<div class="container">				
+								<a href="single-item.html" class="search__item-link">Пирог с черникой</a>
+							</div>
+						</li>
+						<li class="search__item">
+							<div class="container">
+								<a href="single-item.html" class="search__item-link">Пирог со шпинатом и сыром</a>
+							</div>
+						</li>
+						<li class="search__item">
+							<div class="container">
+								<a href="single-item.html" class="search__item-link">Куриный пирог</a>
+							</div>
+						</li>
+						<li class="search__item">
+							<div class="container">
+								<a href="single-item.html" class="search__item-link">Пирог с сердцем</a>
+							</div>
+						</li>
+					</ul>
+				</div>				
+			</aside>
+			<!-- END SEARCH -->
+		</div>		
+	</div>
 </div>	
 <script src="js/vendor.js"></script>
 <script src="js/common.min.js"></script>

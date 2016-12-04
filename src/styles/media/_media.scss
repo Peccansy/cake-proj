@@ -5,6 +5,10 @@
 	.header__center {
 		width: 44.5%;
 	}
+	.profile__form-row, .cart__form-row {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 @include for-tablet-portrait-up {
 	html,body {
@@ -14,7 +18,8 @@
 		max-width: 100%;
 	}
 	.container {
-		width: 640px;
+		width: 95%;
+		max-width: 640px;
 		margin: 0 auto;
 	}
 	.header {
@@ -23,6 +28,7 @@
 		padding: 0 19px;
 		.container {			
 			width: 100%;
+			max-width: 100%;
 		}
 	}
 	.header__center {
@@ -58,12 +64,21 @@
 			.section__item-img {
 				height: 200px;
 				margin-bottom: 15px;
-		   }		  
+		   }
+		   &:first-child {
+		   	margin-left: 0;
+		   }
+		   &:last-child {
+		   	margin-right: 0;
+		   }
 		}
 	}
 	.section__item-img {
 		height: 174px;
 	}
+	// .search__item {
+	// 	padding-left: 19px;
+	// }
 	.cake__form-tag {
 		max-width: 480px;
 		margin: 0 auto;
@@ -81,4 +96,88 @@
 	.comments__input {
 		padding: 20px;
 	}
+	.slider__item {
+		min-height: 220px;
+	}
+	.slider__item-buttons {
+		right: 10px;
+		left: inherit;
+	}
+	.slider__icon {
+		width: 22px;
+	}
+	.slider__item-count {
+		font-size: (14/11)+rem;
+	}
+	.owl-prev, .owl-next {		
+		height: 30px;
+		background-size: cover;
+	}
+	.bakery__bakeshop {
+		padding: 30px 0;
+	}
+	.tabs__link-item {
+		max-height: 100%;
+		padding: 20px 0;
+		max-height: 60px;
+	}
+	.info-block__text {
+		padding: 35px;
+	}
+	.bakery__footer-item {
+		width: 3em;
+		height: 3em;
+	}
+	.bakery__footer-link {
+		width: 22px;
+		height: 3em;
+	}
+	.cart {
+		min-height: calc(100vh - 80px);
+		.container {
+			position: relative;
+			width: 480px;
+		}
+	}
+
+	.cart__input {
+		width: 30px;
+		height: 30px;
+		&_left,&_right {
+			background-size: 20px;
+		}		
+		&_code {
+			width: 45%;
+		}
+	}
+	.filter__item {
+		border-width: 2px;
+		border-left: none;
+		text-align: center;
+		&_2 .filter__select {
+			padding: 22px 19px;
+		}
+	} 
+	.filter__item-wrapper {
+		max-width: 640px;
+	}
+	.filter__select {
+		padding: 22px 0;
+		max-width: 640px;
+		margin: auto;
+	}
+	.orders__list {
+		width: 70%;
+		margin: 0 auto 19px;
+	}
+	.filters {
+		min-height: calc(100vh - 150px);
+	}
+	.reg-form__inner {
+		max-width: 480px;
+	}
+	.profile__form-link {
+		text-align: right;
+	}
+
 }
