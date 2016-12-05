@@ -280,7 +280,18 @@
 	.profile__form-link {
 		text-align: right;
 	}
-
+	//sidebar fix
+	.search {
+		width: 50%;
+	}
+	.wrapper_search-open {
+		.wrapper__inner {
+			transform: translate3d(-50%,0,0);		
+		}
+		.search {
+			box-shadow: 1px -3px 15px 0 rgba(0,0,0,.2);
+		}
+	}
 }
 @include for-tablet-landscape-up {
 	.container {
