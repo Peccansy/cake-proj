@@ -268,8 +268,13 @@
 		}
 	} 	
 	.orders__list {
-		width: 70%;
-		margin: 0 auto 19px;
+		font-size: 0;
+		margin-left: -10px;	
+	}
+	.orders__item {
+		@include inline-block(top);
+		margin-left: 10px;
+		width: calc(100%/2 - 10px);
 	}
 	.filters {
 		min-height: calc(100vh - 181px);
