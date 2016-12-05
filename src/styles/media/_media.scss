@@ -231,17 +231,42 @@
 			width: 45%;
 		}
 	}
+	.filter {
+		.container {
+			text-align: left;
+		}
+	}
 	.filter__item {
 		border-width: 2px;
 		border-left: none;
 		text-align: center;
-		&_2 .filter__select {
-			padding: 22px 19px;
+		.filter__item-wrapper {
+			width: auto;
+			&_select::after {
+				right: -15px;
+			}
+		}
+		.filter__select {
+			display: inline-block;
+			width: auto;
+			padding-left: 19px;
+		}
+		&_2 { 
+			.filter__select {
+				padding: 22px 19px;
+				width: 100%;			
+			}
+			.filter__item-wrapper {
+				width: 100%;
+				&_select::after {
+					right: 19px;
+				}
+			}
+		}
+		.filter__select {
+			padding: 22px 0;
 		}
 	} 	
-	.filter__select {
-		padding: 22px 0;		
-	}
 	.orders__list {
 		width: 70%;
 		margin: 0 auto 19px;
@@ -256,4 +281,12 @@
 		text-align: right;
 	}
 
+}
+@include for-tablet-landscape-up {
+	.container {
+		max-width: 768px;
+	}
+	.section__item {
+		width: calc(100%/4 - 20px);
+	}
 }

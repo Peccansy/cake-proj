@@ -47,7 +47,7 @@
 	position: absolute;
 	bottom: -10px;
 	right: -10px;
-	background-color: $bgMenu;
+	background-color: #f8f8f8;
 }
 .header__cart-count {
 	@include inline-block(middle);
