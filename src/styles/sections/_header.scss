@@ -3,9 +3,18 @@
 	background-color: $bgHeader;
 	line-height: 60px;
 	font-size: 0;
-	transition: background-color .4s ease-in;
+	transition: .2s ease-in;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10000;	
 	&_single {
 		background-color: $bgBtnSearch;
+	}
+	&_fixed {
+		width: 	100%;
+		position: fixed;		
 	}	
 }
 .header__left{

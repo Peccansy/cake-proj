@@ -28,6 +28,14 @@
 	}
 	.wrapper {
 		max-width: 1024px;
+		&_search-open {
+			.header {
+				left: -50%;
+			}
+		}
+	}
+	.wrapper__inner {
+		padding-top: 113px;
 	}
 	.container {
 		width: 95%;
@@ -289,13 +297,25 @@
 	.search {
 		width: 50%;
 	}
+	.search__header {
+		width: 50%;
+	}
 	.wrapper_search-open {
 		.wrapper__inner {
 			transform: translate3d(-50%,0,0);		
 		}
 		.search {
 			box-shadow: 1px -3px 15px 0 rgba(0,0,0,.2);
-		}
+			left: 50%;
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				right: 100%;				
+				width: 100%;
+				height: 100%;				
+			}		
+		}		
 	}
 }
 @include for-tablet-landscape-up {
