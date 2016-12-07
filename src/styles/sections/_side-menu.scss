@@ -7,7 +7,9 @@
 	width: 82%;
 	height: 100vh;	
 	background-color: $bgMenu;
-	transition: .4s ease-in;	
+	position: fixed;
+	left: -82%;
+	transition: .2s ease-in;	
 }
 .menu__info {
 	display: table;

@@ -3,13 +3,18 @@
 	left: 100%;
 	overflow-y: scroll;
     height: 100vh;
-    max-height: 100vh;	
+    max-height: 100vh;
+    top: 0;
+    transition: .2s ease-in;
 }
 .search__header {
 	height: 60px;
+	width: 100%;
 	background-color: $bgBtnSearch;
 	padding: 10px 0;
 	border-bottom: 	1px solid #E5E5E5;
+	position: fixed;
+	top: 0;
 }
 .search__input-search {
 	outline: none;
@@ -27,6 +32,9 @@
 	color: $gray;
 	margin-left: 10px;
 	line-height: 14px;
+}
+.search__result {
+	padding-top: 60px;
 }
 .search__item {
 	height: 40px;

@@ -5,6 +5,7 @@ html, body {
 	@include font('source_sans_proregular', 11px, normal, 20px);
 	color: $black;
 	height: 100%;
+	overflow: auto;
 }
 h1,
 h2,
@@ -39,16 +40,26 @@ ul {
 		.wrapper__inner {			
 			position: relative;
 			transform: translate3d(82%,0,0);
-			max-height: 100vh;			
+			// max-height: 100vh;			
 		}		
 		.header {
 			background-color: $bgBtnOpen;
+			left: 82%;
+		}
+		.menu {
+			left: 0;
 		}		
 	}
 	&_search-open {
-		height: 100vh;
+		//height: 100vh;
 		.wrapper__inner {
 			transform: translate3d(-100%,0,0);
+		}
+		.header {
+			left: -100%;
+		}
+		.search {
+			left: 0;
 		}
 	}
 	&_bg {
@@ -61,7 +72,8 @@ ul {
 	}
 }
 .wrapper__inner {
-	transition: .4s ease-in;
+	padding-top: 60px;
+	transition: .2s ease-in;
 	position: relative;
 	transform: translate3d(0,0,0);
 }
