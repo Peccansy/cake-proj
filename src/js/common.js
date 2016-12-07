@@ -24,8 +24,8 @@ $(document).ready(function(){
 	
 	$('.wrapper').on('swiperight', function(e) {
 		if (!$('.wrapper').is('.wrapper_menu-open')) {
-
-			offCanvas($('.wrapper'), 'wrapper_menu-open');
+			
+			if($('.slider').has(e.target).length == 0) offCanvas($('.wrapper'), 'wrapper_menu-open');			
 
 		}else {
 			e.preventDefault();
