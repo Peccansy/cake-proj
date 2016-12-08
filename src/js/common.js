@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var offCanvas = function (wrap, open) {
 
 		if (wrap.length === 0) return false;
-
+		if($('body').has('.slider')) $('.slider__wrap').css('z-index', '0');
 		if (wrap.is('.'+ open)) {
 			wrap.removeClass(open);					
 		} else {

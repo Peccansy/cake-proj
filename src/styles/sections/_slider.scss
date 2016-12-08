@@ -1,14 +1,18 @@
 .slider {
 	position: relative;
+	width: 100%;
+	z-index: 0;
 	&_cake {		
 		margin-bottom: 10px;
 	}
 }
 .slider__item.cake__img {
 	margin-bottom: 0;
+	width: 100%;
 }
 .slider__wrap {
 	position: relative;	
+	z-index: 0;
 }
 .slider__list {
 	width: 100%;
@@ -72,6 +76,7 @@
 	left: 50%;
 	transform: translateX(-50%);
 	margin-left: -20px;	
+	z-index: 10;
 }
 .owl-nav {
 	position: absolute;
@@ -88,6 +93,7 @@
 	height: 20px;
 	background:transparent url('../assets/img/icons/slider_arrow.svg') center no-repeat;
 	margin-top: -10px;
+	z-index: 10;
 }
 .owl-prev {
 	left: 20px;
