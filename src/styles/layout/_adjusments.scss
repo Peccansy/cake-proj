@@ -67,13 +67,16 @@ ul {
 		&::after {
 			display: none;
 		}
-	}
+	}	
 }
 .wrapper__inner {
 	padding-top: 60px;
 	transition: .2s ease-in;
 	position: relative;
 	transform: translate3d(0,0,0);
+	&_no-header {
+		padding-top: 0;
+	}
 }
 .container {
 	@extend %clearfix;

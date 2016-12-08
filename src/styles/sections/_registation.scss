@@ -1,8 +1,8 @@
 .reg-form {
 	height: 100vh;
+	min-height: 100vh;
 	background-color: $bgBtnSearch;
-	position: relative;
-	min-height: 375px;	
+	position: relative;		
 	.container {
 		position: relative;
 	}
@@ -82,8 +82,8 @@
 		color: $btnBg;
 		background:transparent;		
 	}
-	&_email {
-		background: #fff url('../assets/img/icons/mail.svg') 10px center no-repeat;
+	&_phone {
+		background: #fff url('../assets/img/icons/phone.svg') 10px center no-repeat;
 		background-size: 22px 22px;
 	}
 	&_password {

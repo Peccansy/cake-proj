@@ -36,6 +36,9 @@
 	}
 	.wrapper__inner {
 		padding-top: 113px;
+		&_no-header {
+			padding-top: 0;
+		}
 	}
 	.container {
 		width: 95%;
