@@ -202,10 +202,15 @@ $(document).ready(function(){
 	//modals 
 
 	var offScroll = function () {
-		$(window).on({
-			wheel: function (e) { e.preventDefault(); },
-			touchmove: function (e) {e.preventDefault(); }
-		});
+		if ($('html').attr('style')) {
+
+			$("html").removeAttr('style');
+
+		}else {
+
+			$("html").css('overflow-y', 'hidden');
+
+		}		
 	}
 
 	var modalToggle = function(name) {
@@ -221,9 +226,8 @@ $(document).ready(function(){
 
 					modalItem.removeClass('modal__inner_active');
 					overlay.removeClass('modal_active');
-					overlay.off('click');
-					$(window).off('touchmove');
-					$(window).off('wheel');
+					offScroll();
+					overlay.off('click');					
 				}
 			});
 
@@ -231,9 +235,7 @@ $(document).ready(function(){
 			
 			modalItem.removeClass('modal__inner_active');
 			overlay.removeClass('modal_active');
-			$(window).off('touchmove');
-			$(window).off('wheel');
-
+			offScroll();
 		}
 
 	} 
