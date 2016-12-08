@@ -70,6 +70,9 @@
 	@include inline-block(middle);
 	margin-left: 4px;
 }
+.owl-carousel .owl-item {
+	z-index: 0;
+}
 .owl-dots {
 	position: absolute;
 	bottom: 10px;
