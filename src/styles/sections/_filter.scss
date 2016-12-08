@@ -15,7 +15,10 @@
 		border-right-color: transparent;
 	}
 	&_2 {
-		width: 50%;		
+		width: 50%;
+		.filter__select {
+			padding: 10px 19px;
+		}					
 	}
 }
 .filter__item-wrapper {
@@ -25,7 +28,7 @@
 		&::after {
 			@extend .cake__input-wrapper_select::after;
 			right: 19px;
-		} 	
+		}		
 	}		
 }
 .filter__select {

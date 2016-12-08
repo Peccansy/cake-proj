@@ -21,6 +21,9 @@
 	.header__cart-indicator {
 		bottom: 5px;
 	}	
+	.filter__select {
+		padding: 10px 0;
+	}
 }
 @include for-tablet-portrait-up {
 	html,body {
@@ -273,10 +276,7 @@
 					right: 19px;
 				}
 			}
-		}
-		.filter__select {
-			padding: 22px 0;
-		}
+		}		
 	} 	
 	.orders__list {
 		font-size: 0;
