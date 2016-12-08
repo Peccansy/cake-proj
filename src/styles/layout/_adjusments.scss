@@ -5,7 +5,7 @@ html, body {
 	@include font('source_sans_proregular', 11px, normal, 20px);
 	color: $black;
 	height: 100%;
-	overflow: auto;
+	overflow: auto;	
 }
 h1,
 h2,
@@ -30,7 +30,7 @@ ul {
 	overflow: hidden;	
 	max-width: 480px;
 	margin:0 auto;	
-	position: relative;	
+	position: relative;		
 	&::after {
 		content: '';
 		display: block;
