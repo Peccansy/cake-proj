@@ -9,6 +9,7 @@
 	background-color: $bgMenu;
 	position: fixed;
 	left: -82%;
+	z-index: 1001;
 	transition: .2s ease-in;	
 }
 .menu__info {

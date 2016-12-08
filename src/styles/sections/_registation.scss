@@ -1,8 +1,8 @@
 .reg-form {
 	height: 100vh;
+	min-height: 100vh;
 	background-color: $bgBtnSearch;
-	position: relative;
-	min-height: 375px;	
+	position: relative;		
 	.container {
 		position: relative;
 	}
@@ -67,11 +67,7 @@
 		text-align: center;
 		text-transform: uppercase;		
 		border-color: $btnBg;
-		padding: 0;
-		&:hover, &:active {
-			background-color: transparent;
-			color: $btnBg;
-		}
+		padding: 0;			
 	}
 	&_2 {
 		width: calc(100%/2 - 10px);
@@ -82,13 +78,21 @@
 		color: $btnBg;
 		background:transparent;		
 	}
-	&_email {
-		background: #fff url('../assets/img/icons/mail.svg') 10px center no-repeat;
+	&_phone {
+		background: #fff url('../assets/img/icons/phone.svg') 10px center no-repeat;
 		background-size: 22px 22px;
 	}
 	&_password {
 		background: #fff url('../assets/img/icons/pass.svg') 10px center no-repeat;
 		background-size: 22px 22px;
+	}
+	&_fb {
+		background-color: #4867aa;
+		border-color: transparent;
+	}
+	&_vk {
+		background-color: #507299;
+		border-color: transparent;
 	}
 }
 .reg-form__btn-icon {
@@ -96,10 +100,10 @@
 	width: 16px;
 	height: 16px;
 	&_fb {
-		background:transparent url('../assets/img/icons/fb.svg') center no-repeat;
+		background:transparent url('../assets/img/icons/fb_wt.svg') center no-repeat;
 	}
 	&_vk {
-		background:transparent url('../assets/img/icons/vk.svg') center no-repeat;
+		background:transparent url('../assets/img/icons/vk_wt.svg') center no-repeat;
 	}	
 }
 .reg-form__btn-text {

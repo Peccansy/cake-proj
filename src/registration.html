@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>    
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>CakeProj</title>	
@@ -15,7 +15,7 @@
 </head>
 <body>
 	<div class="wrapper wrapper_no-footer">
-		<div class="wrapper__inner">
+		<div class="wrapper__inner wrapper__inner_no-header">
 			<div class="reg-form">
 				<div class="container">
 					<div class="reg-form__element reg-form__element_forgot">
@@ -30,7 +30,7 @@
 						</div>
 						<form action="#" class="reg-form__form-tag">
 							<div class="reg-form__row">
-								<input type="email" name="email" class="reg-form__input reg-form__input_email" placeholder="Email" autofocus>
+								<input type="tel" name="tel" class="reg-form__input reg-form__input_phone" placeholder="Телефон" autofocus>
 							</div>
 							<div class="reg-form__row">
 								<input type="password" name="password" class="reg-form__input reg-form__input_password" placeholder="Пароль">
@@ -39,13 +39,13 @@
 								<a href="#" class="reg-form__input reg-form__input_btn">зарегистрироваться</a>
 							</div>
 							<div class="reg-form__row">
-								<button type="button" name="fb" class="reg-form__input reg-form__input_btn-alt reg-form__input_2">
+								<button type="button" name="fb" class="reg-form__input reg-form__input_btn reg-form__input_fb">
 									<span class="reg-form__btn-icon reg-form__btn-icon_fb"></span>
-									<span class="reg-form__btn-text">войти</span>
+									<span class="reg-form__btn-text">Войти через Facebook</span>
 								</button>
-								<button type="button" name="fb" class="reg-form__input reg-form__input_btn-alt reg-form__input_2">
+								<button type="button" name="vk" class="reg-form__input reg-form__input_btn reg-form__input_vk">
 									<span class="reg-form__btn-icon reg-form__btn-icon_vk"></span>
-									<span class="reg-form__btn-text">войти</span>
+									<span class="reg-form__btn-text">Войти через Вконтакте</span>
 								</button>								
 							</div>
 						</form>

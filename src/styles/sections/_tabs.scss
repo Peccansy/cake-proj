@@ -9,7 +9,7 @@
 	width: (100/3)+%;
 	max-height: 40px;
 	padding: 10px 0;
-	color: #E2E2E2;
+	color: $gray;;
 	border: 1px solid #E2E2E2;
 	border-left: none;
 	font-size: (14/11)+rem;
@@ -19,8 +19,7 @@
 		border-right: none;
 	}
 	&_active {
-		border-bottom: 3px solid $btnBg;
-		color: $gray;		
+		border-bottom: 3px solid $btnBg;				
 	}
 	&_2 {
 		width: 50%;

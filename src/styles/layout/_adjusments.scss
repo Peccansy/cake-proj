@@ -4,8 +4,7 @@
 html, body {
 	@include font('source_sans_proregular', 11px, normal, 20px);
 	color: $black;
-	height: 100%;
-	overflow: auto;	
+	min-height: 100%;	
 }
 h1,
 h2,
@@ -39,8 +38,7 @@ ul {
 	&_menu-open {			
 		.wrapper__inner {			
 			position: relative;
-			transform: translate3d(82%,0,0);
-			// max-height: 100vh;			
+			transform: translate3d(82%,0,0);						
 		}		
 		.header {
 			background-color: $bgBtnOpen;
@@ -51,7 +49,7 @@ ul {
 		}		
 	}
 	&_search-open {
-		//height: 100vh;
+		
 		.wrapper__inner {
 			transform: translate3d(-100%,0,0);
 		}
@@ -69,13 +67,16 @@ ul {
 		&::after {
 			display: none;
 		}
-	}
+	}	
 }
 .wrapper__inner {
 	padding-top: 60px;
 	transition: .2s ease-in;
 	position: relative;
 	transform: translate3d(0,0,0);
+	&_no-header {
+		padding-top: 0;
+	}
 }
 .container {
 	@extend %clearfix;
