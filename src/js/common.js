@@ -264,5 +264,17 @@ $(document).ready(function(){
 
 		}
 	}
-	
+	// filters
+	$('body').on('click', '.filters__item', function(e) {
+		e.preventDefault();
+		var active = 'filters__item_active';
+		var item = $(this);
+		
+		if (!item.hasClass(active)) {
+			item.addClass(active);
+		}else {
+			item.removeClass(active);
+		}
+
+	});		
 });
