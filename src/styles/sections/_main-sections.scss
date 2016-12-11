@@ -155,13 +155,14 @@
 		position: absolute;
 		right: 10px;
 		bottom: 0px;
-		padding: 3px 4px 3px 2px;		
+		padding: 2px 4px 4px 2px;		
 		border-radius: 4px;	
 		background-color: $btnBg;
-		line-height: 13px;	
+		line-height: 13px;		
 		.section__stats-icon {		
 			fill: #fff;
 			margin-left: 0;
+			height: 12px;
 		}
 	}
 }
@@ -179,5 +180,48 @@
 	color: $gray;
 	margin-left: 3px;
 	font-size: 1rem;
+}
+.section__row {
+	margin: 10px -10px;
+	font-size: 0;
+}
+.section__btn {
+	@include inline-block(middle);
+	border-radius: 5px;
+	padding: 10px;
+	border: 1px solid transparent;
+	line-height: 20px;
+	font-size: (14/11)+rem;
+	text-decoration: none;
+	background-color: $btnBg;
+	color: #fff;
+	margin: 0 10px;
+	text-transform: none;
+	cursor: pointer;
+	text-align: center;
+	outline: none;
+	&_inverse {		
+		background-color: transparent;
+		border-color: $btnBg;
+		color: $btnBg;		
+	}
+	&_sm {
+		padding: 5px;
+	}
+	&_xl {
+		padding: 15px;
+	}
+	&_access {
+		background-color: #1eb74d
+	}
+	&_warning {
+		background-color: #efa41d;
+	}
+	&_full {
+		width: calc(100% - 20px);		
+	}
+	&_half {
+		width: calc(100%/2 - 20px);
+	}
 }
 

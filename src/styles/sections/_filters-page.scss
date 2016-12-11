@@ -44,19 +44,33 @@
 	&_red {
 		border-color: #FF6B6F;
 	}
+	&_active {
+		background-color: $btnBg;	
+		border-color: transparent;	
+		.filters__item-icon {
+			opacity: 0;
+		}
+		.filters__item-text {
+			color: #fff;
+			margin-left: -10px;
+		}
+	}
 }
 .filters__item-icon,.filters__item-text {
 	@include inline-block(middle);	
 }
 .filters__item-icon {
+	opacity: 1;
 	width: 11px;
 	height: 11px;
 	background:transparent url('../assets/img/icons/plus_gr.svg') center no-repeat;
+	transition: .3s ease-in-out;
 }
 .filters__item-text {
 	font-size: 1rem;
 	color: $gray;
 	margin-left: 6px;
+	transition: .3s ease-in-out;
 }
 .filters__select {
 	@extend .comments__input;

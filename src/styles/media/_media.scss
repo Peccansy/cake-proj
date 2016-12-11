@@ -59,12 +59,18 @@
 		}
 		.header__right {
 			display: block;
+			position: absolute;
+			margin-top: 0;
+			top: 14px;
+			right: 19px;
 		}
-		.header__center {			
+		.header__center {
+			display: block; 		
 			line-height: 20px;
 			width: auto;
 			margin-top: 15px;
 			position: relative;
+			margin-bottom: 8px;
 			&_back {
 				padding-left: 25px;
 			}			
@@ -88,8 +94,9 @@
 			height: auto;
 			width: 100%;
 			.nav__list {
-				font-size: 0;
-				text-align: center;
+				display: flex;
+				justify-content: space-between;				
+				font-size: 0;				
 				margin-left: -15px;
 			}
 			.nav__item {
