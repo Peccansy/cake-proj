@@ -155,13 +155,14 @@
 		position: absolute;
 		right: 10px;
 		bottom: 0px;
-		padding: 3px 4px 3px 2px;		
+		padding: 2px 4px 4px 2px;		
 		border-radius: 4px;	
 		background-color: $btnBg;
-		line-height: 13px;	
+		line-height: 13px;		
 		.section__stats-icon {		
 			fill: #fff;
 			margin-left: 0;
+			height: 12px;
 		}
 	}
 }

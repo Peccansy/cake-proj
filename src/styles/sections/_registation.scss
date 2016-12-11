@@ -99,6 +99,7 @@
 	@include inline-block(middle);
 	width: 16px;
 	height: 16px;
+	margin-bottom: 3px;
 	&_fb {
 		background:transparent url('../assets/img/icons/fb_wt.svg') center no-repeat;
 	}
@@ -107,5 +108,6 @@
 	}	
 }
 .reg-form__btn-text {
-	@include inline-block(middle);		
+	@include inline-block(middle);	
+	margin-left: 5px;	
 }
