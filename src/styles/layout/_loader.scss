@@ -1,0 +1,29 @@
+.cssload-spin-box {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 14px;
+	height: 14px;
+	border-radius: 100%;
+	box-shadow: 14px 14px rgb(224,107,110), -14px 14px rgba(80,21,11,0.95), -14px -14px rgb(224,107,110), 14px -14px rgb(80,21,11);
+	animation: cssload-spin ease infinite 4.6s;
+	z-index: 10;
+}
+@keyframes cssload-spin {
+	0%,
+	100% {
+		box-shadow: 14px 14px rgb(224,107,110), -14px 14px rgb(80,21,11), -14px -14px rgb(224,107,110), 14px -14px rgba(80,21,11,0.98);
+	}
+	25% {
+		box-shadow: -14px 14px rgb(80,21,11), -14px -14px rgba(224,107,110,0.96), 14px -14px rgb(80,21,11), 14px 14px rgb(224,107,110);
+	}
+	50% {
+		box-shadow: -14px -14px rgb(224,107,110), 14px -14px rgb(80,21,11), 14px 14px rgb(224,107,110), -14px 14px rgb(80,21,11);
+	}
+	75% {
+		box-shadow: 14px -14px rgb(80,21,11), 14px 14px rgb(224,107,110), -14px 14px rgb(80,21,11), -14px -14px rgb(224,107,110);
+	}
+}
