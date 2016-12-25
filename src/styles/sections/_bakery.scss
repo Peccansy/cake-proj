@@ -15,12 +15,13 @@
 	width: 70px;
 	height: 70px;
 	border-radius: 50%;
-	overflow: hidden;	
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 .bakery__logo-pic {
-	display: block;	
-	max-width: 100%;
-	height: auto;
+	display: none;	
 }
 .bakery__title {
 	@extend .section__title;

@@ -21,6 +21,10 @@
 	&_active {
 		border-bottom: 3px solid $btnBg;				
 	}
+	&_disabled {
+		color: #e2e2e2;
+		cursor: not-allowed;
+	}
 	&_2 {
 		width: 50%;
 	}
